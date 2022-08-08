@@ -1,0 +1,157 @@
+%! Author = gurki
+%! Date = 08.08.22
+
+% Preamble
+\documentclass[11pt]{article}
+
+\title{Seminararbeit zum Vortrag ``Satz von Roth I'' im Seminar ``Analysis'' bei Prof. Dr. Hein}
+\author{Marius Müller}
+\date{Juli 2022}
+% Packages
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+
+% Document
+\begin{document}
+
+    \maketitle
+
+    \vfill
+
+    \begin{abstract}
+        \textrm{Diese Arbeit behandelt den Satz von Thue-Siegel-Roth,
+        der mittels des Irrationalitätsmaßes eine Aussage über die Irrationalität algebraisch irrationaler Zahlen liefert.
+        \newline
+        In dieser Arbeit wird zur Thematik hingeführt, die nötigen Grundlagen behandelt und das erste Theorem im Beweis
+        des Satzes von Roth erklärt und bewiesen.}
+    \end{abstract}
+
+    \newpage
+
+    \tableofcontents
+
+    \newpage
+
+    \section{Einleitung}
+    \label{sec:intro}
+        \textrm{Der \emph{Satz von Thue-Siegel-Roth} (im Folgenden kurz \emph{Satz von Roth} genannt) wurde erstmals von
+        Klaus Friedrich Roth bewiesen, der im Jahre 1958 für diesen Meilenstein die \emph{Fields-Medallie} verliehen bekam.
+        \newline
+        Diese Arbeit ist eng an das Kapitel VI des Buches ``An Introduction To Diophantine Approximation'' von
+        John William Scott Cassels aus dem Jahre 1957 angelehnt.
+        \newline
+        Der Beweis des \emph{Satzes von Roth} gliedert sich hier in drei Theorems.\ Von diesen wird in dieser
+        Arbeit der erste Satz, das \emph{Theorem II}, beschrieben, erklärt und bewiesen (der \emph{Satz von Roth} selbst
+        ist hier das \emph{Theorem I}; der Übersichtlichkeit halber wird sich an die Nummerierung der Quelle gehalten.)}
+
+    \section{Motivation des Themas}
+    \label{sec:motivation}
+        \textrm{Das sogenannte \emph{Irrationalitätsmaß} quantifiziert die Irrationalität einer reellen Zahl. Dazu wird
+        die folgende Definition verwendet:}
+
+        \subsection{\textrm{Das Irrationalitätsmaß}}
+        \label{subsec:irr-measure}
+            \textrm{Sei $x \in \mathbb{R}$ beliebig. Sei $M$ die Menge aller $\mu \in \mathbb{R}$, sodass die Ungleichung
+            \begin{equation*}
+                0 < |x - \frac{p}{q}| < \frac{1}{q^\mu}
+            \end{equation*}
+            nur endlich viele Lösungen in $p \in \mathbb{Z}, q \in \mathbb{N}$
+            besitzt.\ Dann heißt
+            \begin{equation*}
+                \mu(x) \coloneqq \inf(M)
+            \end{equation*}
+            das \emph{Irrationalitätsmaß} von $x$.
+            \newline
+            Die folgenden Beispiele illustrieren diese Definition.}
+
+        \subsection{\textrm{Beispiele zum Irrationalitätsmaß}}
+        \label{subsec:examples-irr-measure}
+            \begin{itemize}
+                \item \textrm{Für $x \in \mathbb{Q}$ gilt: $\mu(x) = 1$}
+                \item \textrm{Für irrationale $x$ wurde gezeigt, dass gilt: $\mu(x) \geq 2$}
+                \item \textrm{Für die \emph{eulersche Zahl} $e$ gilt $\mu(e) = 2$}
+                \item \textrm{Das Irrationalitätsmaß der Kreiszahl $\pi$ ist bisher unbekannt.\ Der neuste Fortschritt
+                            setzt die obere Schranke bei $\mu(\pi) \leq 7,1032\dots$ fest.}
+            \end{itemize}
+
+        \subsection{Zentrale Fragestellung des \emph{Satzes von Roth}}
+        \label{subsec:question}
+            \textrm{Es stellt sich nach den oben genannten Beispielen die Frage, ob auch alle irrationale Zahlen dasselbe
+            Irrationalitätsmaß besitzen. Hier liefert der \emph{Satz von Roth} eine teilweise Antwort:
+            \newline
+            Das Irrationalitätsmaß aller \emph{algebraischen} irrationalen Zahlen ist genau zwei.}
+
+    \section{Grundlagen und Voraussetzungen}
+    \label{sec:basics}
+        Algebraische Zahlen, formale Aussage des Satzes (\emph{Theorem I}), oBdA $a_n = 1$ und Sachen zu Polynomen
+        
+        \subsection{algebraische Zahlen}
+        \label{subsec:algebraic-numbers}
+            Definition algebraische Zahlen
+        
+        \subsection{Satz von Roth (\emph{Theorem I})}
+        \label{subsec:th1}
+            formale Aussage des Satzes von Roth
+        
+        \subsection{Normieren des Polynoms}
+        \label{subsec:norm-poly}
+            oBdA $a_n = 1$
+        
+        \subsection{Polynome}
+        \label{subsec:polynomials}
+            bisschen bla bla was hier passiert
+        
+            \subsubsection{Definition der Polynome}
+            \label{subsubsec:poly-def}
+                \textrm{was für Polynome benutzt werden und Notation und so}
+            
+            \subsubsection{Der Inhalt eines Polynoms}
+            \label{subsubsec:content-poly}
+                Definition Inhalt Polynome
+            
+            \subsubsection{Restpolynom}
+            \label{subsubsec:rem-poly}
+                Definition von diesem Taylor Ableitungen Bums da
+            
+            \subsubsection{Index eines Polynoms}
+            \label{subsubsec:index-poly}
+                Definition Index von Polynomen
+            
+        \subsection{Lemma 1}
+        \label{subsec:lemma1}
+            Lemma 1 mit Beweis (bisschen was zum Taylor Ableitungen Bums)
+        
+        \subsection{Korollar vom Satz von Taylor}
+        \label{subsec:taylor-corollary}
+            das random Korollar vom Satz von Taylor
+        
+        \subsection{Lemma 2}
+        \label{subsec:lemma2}
+            Lemma 2 maybe mit Beweis? (paar Eigenschaften zum Index)
+
+    \section{Konstruktion des Polynoms R (\emph{Theorem II})}
+    \label{sec:th2}
+        Zwischengelaber mit Kontext, Struktur, Sinn im Beweis, etc.
+
+        \subsection{Aussage des \emph{Theorem II}}
+        \label{subsec:th2}
+            \textrm{Satz 2 erklären}
+
+        \subsection{Lemma 3}
+        \label{subsec:lemma3}
+            Lemma 3 halt, maybe mit Beweis?
+
+        \subsection{Lemma 4}
+        \label{subsec:lemma4}
+            Lemma 4 halt, maybe mit Beweis?
+
+        \subsection{Lemma 5}
+        \label{subsec:lemma5}
+            Lemma 5 halt, maybe mit Beweis?
+
+        \subsection{Beweis des \emph{Theorem II}}
+        \label{subsec:proof-th-2}
+            letztendlicher Beweis des Theorem II
+        
+\end{document}
