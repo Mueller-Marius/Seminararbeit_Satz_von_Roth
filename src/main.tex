@@ -11,6 +11,7 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{mathtools}
+\usepackage{cleveref}
 
 % Document
 \begin{document}
@@ -88,16 +89,40 @@
         
         \subsection{algebraische Zahlen}
         \label{subsec:algebraic-numbers}
-            Definition algebraische Zahlen
+            \textrm{Sei $z \in \mathbb{C}$. $z$ heißt \emph{algebraisch} genau dann, wenn gilt:}
+            \begin{equation}
+                \exists f \in \mathbb{Q}[x] : f(z) = 0 \label{eq:def-algebraic}
+            \end{equation}
+            \textrm{OBdA kann angenommen werden, dass $f \in \mathbb{Q}[x]$, da sich die Gleichung $f(x) = 0$ mit dem
+            Produkt der Nenner der Koeffizienten der Form $a_n = \frac{p_n}{q_n}$, d.h.\ mit $\prod_{i=1}^k q_i$
+            multiplizieren lässt, wodurch alle Koeffizienten ganzzahlig werden.
+            \newline
+            Weiterhin lässt sich oBdA annehmen, dass für den Koeffizienten der höchsten Potenz von $x$ gilt: $a_n \neq 0$.}
         
         \subsection{Satz von Roth (\emph{Theorem I})}
         \label{subsec:th1}
-            formale Aussage des Satzes von Roth
+            Sei $\xi \in \mathbb{R}$ algebraisch irrational und $\delta \> 0$ bel.\ Dann besitzt die Ungleichung
+            \begin{equation}
+                0 < | \xi - \frac{p}{q} | < q^{-(2+\delta)} \label{eq:svr}
+            \end{equation}
+            \textrm{nur endlich viele Lösungen in $p \in \mathbb{Z}$, $q \in \mathbb{N}$.}
         
         \subsection{Normieren des Polynoms}
         \label{subsec:norm-poly}
-            oBdA $a_n = 1$
-        
+            \textrm{Angenommen, der \emph{Satz von Roth} gelte.\ Dann gilt für $a_n \xi = \Xi$:}
+            \begin{equation*}
+                0 = \Xi^n + a_{n-1} \Xi^{n-1} + \dots + a_n^{n-1} a_0
+            \end{equation*}
+            \textrm{und nach Multiplikation mit $|a_n|$ und geeigneter Abschätzung von \cref{eq:def-algebraic} gilt:}
+            \begin{equation*}
+                | \Xi - a_n \frac{p}{q} | < |a_n| q^{-(2+\delta)} < q^{-(2+\frac{1}{2}\delta)}
+            \end{equation*}
+            \textrm{für hinreichend große $q$.\ Da $\delta$ beliebig gewählt wurde, gilt der Satz nun für $\Xi$ genau
+            dann, wenn er für $\xi$ gilt. Somit gilt insgesamt oBdA:}
+            \begin{equation}
+                f(x) = x^n + a_{n-1} x^{n-1} + \dots + a_0 \label{eq:prereq}, f(\xi) = 0, a_{n-1}, \dots, a_0 \in \mathbb{Z}
+            \end{equation}
+
         \subsection{Polynome}
         \label{subsec:polynomials}
             bisschen bla bla was hier passiert
