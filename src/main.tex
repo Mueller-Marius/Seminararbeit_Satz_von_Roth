@@ -93,19 +93,23 @@
             \begin{equation}
                 \exists f \in \mathbb{Q}[x] : f(z) = 0 \label{eq:def-algebraic}
             \end{equation}
-            \textrm{OBdA kann angenommen werden, dass $f \in \mathbb{Q}[x]$, da sich die Gleichung $f(x) = 0$ mit dem
-            Produkt der Nenner der Koeffizienten der Form $a_n = \frac{p_n}{q_n}$, d.h.\ mit $\prod_{i=1}^k q_i$
-            multiplizieren lässt, wodurch alle Koeffizienten ganzzahlig werden.
+            \textrm{d.h.\ falls z eine Lösung eines Polynoms mit rationalen Koeffizienten ist.\ OBdA kann angenommen
+            werden, dass $f \in \mathbb{Q}[x]$, da sich die Gleichung $f(x) = 0$ mit dem Produkt der Nenner der
+            Koeffizienten der Form $a_n = \frac{p_n}{q_n}$, d.h.\ mit $\prod_{i=1}^k q_i$ multiplizieren lässt, wodurch
+            alle Koeffizienten ganzzahlig werden, die Gleichung und damit auch das resultierende Polynom jedoch dieselben
+            Lösungen bzw.\ Nullstellen besitzen.
             \newline
             Weiterhin lässt sich oBdA annehmen, dass für den Koeffizienten der höchsten Potenz von $x$ gilt: $a_n \neq 0$.}
         
         \subsection{Satz von Roth (\emph{Theorem I})}
         \label{subsec:th1}
-            Sei $\xi \in \mathbb{R}$ algebraisch irrational und $\delta \> 0$ bel.\ Dann besitzt die Ungleichung
+            Sei $\xi \in \mathbb{R}$ algebraisch irrational und $\delta > 0$ beliebig.\ Dann besitzt die Ungleichung
             \begin{equation}
                 0 < | \xi - \frac{p}{q} | < q^{-(2+\delta)} \label{eq:svr}
             \end{equation}
-            \textrm{nur endlich viele Lösungen in $p \in \mathbb{Z}$, $q \in \mathbb{N}$.}
+            \textrm{nur endlich viele Lösungen in $p \in \mathbb{Z}$, $q \in \mathbb{N}$.
+            \newline \newline
+            Zunächst wird gezeigt, dass der Satz nur für $a_n = 1$ zu zeigen ist.}
         
         \subsection{Normieren des Polynoms}
         \label{subsec:norm-poly}
@@ -113,19 +117,19 @@
             \begin{equation*}
                 0 = \Xi^n + a_{n-1} \Xi^{n-1} + \dots + a_n^{n-1} a_0
             \end{equation*}
-            \textrm{und nach Multiplikation mit $|a_n|$ und geeigneter Abschätzung von \cref{eq:def-algebraic} gilt:}
+            \textrm{und nach Multiplikation mit $|a_n|$ und geeigneter Abschätzung von Gleichung~\labelcref{eq:svr} gilt:}
             \begin{equation*}
                 | \Xi - a_n \frac{p}{q} | < |a_n| q^{-(2+\delta)} < q^{-(2+\frac{1}{2}\delta)}
             \end{equation*}
-            \textrm{für hinreichend große $q$.\ Da $\delta$ beliebig gewählt wurde, gilt der Satz nun für $\Xi$ genau
-            dann, wenn er für $\xi$ gilt. Somit gilt insgesamt oBdA:}
+            \textrm{für hinreichend große $q$.\ Da $\delta$ beliebig gewählt wurde, gilt der Satz somit nun für $\Xi$
+            genau dann, wenn er für $\xi$ gilt. Somit gilt insgesamt oBdA:}
             \begin{equation}
                 f(x) = x^n + a_{n-1} x^{n-1} + \dots + a_0 \label{eq:prereq}, f(\xi) = 0, a_{n-1}, \dots, a_0 \in \mathbb{Z}
             \end{equation}
 
         \subsection{Polynome}
         \label{subsec:polynomials}
-            bisschen bla bla was hier passiert
+            bisschen bla bla was hier passiert.
         
             \subsubsection{Definition der Polynome}
             \label{subsubsec:poly-def}

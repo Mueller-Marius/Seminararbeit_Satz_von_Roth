@@ -15,7 +15,7 @@
 \contentsline {subsection}{\numberline {3.5}Lemma 1}{5}{}%
 \contentsline {subsection}{\numberline {3.6}Korollar vom Satz von Taylor}{5}{}%
 \contentsline {subsection}{\numberline {3.7}Lemma 2}{5}{}%
-\contentsline {section}{\numberline {4}Konstruktion des Polynoms R (\emph {Theorem II})}{5}{}%
+\contentsline {section}{\numberline {4}Konstruktion des Polynoms R (\emph {Theorem II})}{6}{}%
 \contentsline {subsection}{\numberline {4.1}Aussage des \emph {Theorem II}}{6}{}%
 \contentsline {subsection}{\numberline {4.2}Lemma 3}{6}{}%
 \contentsline {subsection}{\numberline {4.3}Lemma 4}{6}{}%

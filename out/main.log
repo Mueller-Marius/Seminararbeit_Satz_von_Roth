@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.7) (preloaded format=pdflatex 2021.12.14)  9 AUG 2022 18:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.7) (preloaded format=pdflatex 2021.12.14)  12 AUG 2022 01:11
 entering extended mode
 **./main.tex
 (main.tex
@@ -252,8 +252,20 @@ Overfull \hbox (1.84099pt too wide) in paragraph at lines 76--77
  $ \OT1/cmr/m/n/10.95 ist bisher unbekannt. Der neuste
  []
 
-[3] [4] [5] [6]
-(/Users/gurki/IdeaProjects/Seminararbeit Satz von Roth/out/main.aux) ) 
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 109--113
+
+ []
+
+
+Overfull \hbox (13.41953pt too wide) in paragraph at lines 119--121
+\OT1/cmr/m/n/10.95 und nach Multiplikation mit $\OMS/cmsy/m/n/10.95 j\OML/cmm/m
+/it/10.95 a[]\OMS/cmsy/m/n/10.95 j$ \OT1/cmr/m/n/10.95 und geeigneter Abschatz
+ung von Gleichung (2)
+ []
+
+[4] [5] [6] (/Users/gurki/IdeaProjects/Seminararbeit Satz von Roth/out/main.aux
+) ) 
 Here is how much of TeX's memory you used:
  4488 strings out of 480616
  85817 string characters out of 2896114
@@ -262,32 +274,31 @@ Here is how much of TeX's memory you used:
  413214 words of font info for 62 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
  63i,7n,71p,224b,218s stack positions out of 5000i,500n,10000p,200000b,80000s
- </Users/
-gurki/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/e
-c/dpi600/tcrm1095.pk></Users/gurki/Library/Application Support/MiKTeX/texmfs/in
-stall/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/gurki/Library/Applicati
-on Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Us
-ers/gurki/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/
-amsfonts/cm/cmbxti10.pfb></Users/gurki/Library/Application Support/MiKTeX/texmf
-s/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></Users/gurki/Library/Appli
-cation Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-</Users/gurki/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/pub
-lic/amsfonts/cm/cmmi6.pfb></Users/gurki/Library/Application Support/MiKTeX/texm
-fs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Users/gurki/Library/Appli
-cation Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb><
-/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/publ
-ic/amsfonts/cm/cmr12.pfb></Users/gurki/Library/Application Support/MiKTeX/texmf
-s/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></Users/gurki/Library/Applic
-ation Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></U
-sers/gurki/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public
-/amsfonts/cm/cmr8.pfb></Users/gurki/Library/Application Support/MiKTeX/texmfs/i
-nstall/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/gurki/Library/Applicat
-ion Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></Us
-ers/gurki/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/
-amsfonts/cm/cmti10.pfb></Users/gurki/Library/Application Support/MiKTeX/texmfs/
-install/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+ </Users/gurki/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfou
+r/jknappen/ec/dpi600/tcrm1095.pk></Users/gurki/Library/Application Support/MiKT
+eX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/gurki/Libra
+ry/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmb
+x12.pfb></Users/gurki/Library/Application Support/MiKTeX/texmfs/install/fonts/t
+ype1/public/amsfonts/cm/cmbxti10.pfb></Users/gurki/Library/Application Support/
+MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></Users/gurki/L
+ibrary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm
+/cmmi10.pfb></Users/gurki/Library/Application Support/MiKTeX/texmfs/install/fon
+ts/type1/public/amsfonts/cm/cmmi6.pfb></Users/gurki/Library/Application Support
+/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Users/gurki/L
+ibrary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm
+/cmr10.pfb></Users/gurki/Library/Application Support/MiKTeX/texmfs/install/font
+s/type1/public/amsfonts/cm/cmr12.pfb></Users/gurki/Library/Application Support/
+MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></Users/gurki/Li
+brary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/
+cmr6.pfb></Users/gurki/Library/Application Support/MiKTeX/texmfs/install/fonts/
+type1/public/amsfonts/cm/cmr8.pfb></Users/gurki/Library/Application Support/MiK
+TeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/gurki/Libr
+ary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cm
+sy8.pfb></Users/gurki/Library/Application Support/MiKTeX/texmfs/install/fonts/t
+ype1/public/amsfonts/cm/cmti10.pfb></Users/gurki/Library/Application Support/Mi
+KTeX/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
 Output written on "/Users/gurki/IdeaProjects/Seminararbeit Satz von Roth/out/ma
-in.pdf" (6 pages, 208604 bytes).
+in.pdf" (6 pages, 209232 bytes).
 PDF statistics:
  106 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
