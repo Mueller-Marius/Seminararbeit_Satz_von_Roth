@@ -1,23 +1,22 @@
-\contentsline {section}{\numberline {1}Einleitung}{3}{}%
-\contentsline {section}{\numberline {2}Motivation des Themas}{3}{}%
-\contentsline {subsection}{\numberline {2.1}\textrm {Das Irrationalitätsmaß}}{3}{}%
-\contentsline {subsection}{\numberline {2.2}\textrm {Beispiele zum Irrationalitätsmaß}}{3}{}%
-\contentsline {subsection}{\numberline {2.3}Zentrale Fragestellung des \emph {Satzes von Roth}}{4}{}%
-\contentsline {section}{\numberline {3}Grundlagen und Voraussetzungen}{4}{}%
-\contentsline {subsection}{\numberline {3.1}algebraische Zahlen}{4}{}%
-\contentsline {subsection}{\numberline {3.2}Satz von Roth (\emph {Theorem I})}{4}{}%
-\contentsline {subsection}{\numberline {3.3}Normieren des Polynoms}{4}{}%
-\contentsline {subsection}{\numberline {3.4}Polynome}{5}{}%
-\contentsline {subsubsection}{\numberline {3.4.1}Definition der Polynome}{5}{}%
-\contentsline {subsubsection}{\numberline {3.4.2}Der Inhalt eines Polynoms}{5}{}%
-\contentsline {subsubsection}{\numberline {3.4.3}Restpolynom}{5}{}%
-\contentsline {subsubsection}{\numberline {3.4.4}Index eines Polynoms}{5}{}%
-\contentsline {subsection}{\numberline {3.5}Lemma 1}{5}{}%
-\contentsline {subsection}{\numberline {3.6}Korollar vom Satz von Taylor}{5}{}%
-\contentsline {subsection}{\numberline {3.7}Lemma 2}{5}{}%
-\contentsline {section}{\numberline {4}Konstruktion des Polynoms R (\emph {Theorem II})}{6}{}%
-\contentsline {subsection}{\numberline {4.1}Aussage des \emph {Theorem II}}{6}{}%
-\contentsline {subsection}{\numberline {4.2}Lemma 3}{6}{}%
-\contentsline {subsection}{\numberline {4.3}Lemma 4}{6}{}%
-\contentsline {subsection}{\numberline {4.4}Lemma 5}{6}{}%
-\contentsline {subsection}{\numberline {4.5}Beweis des \emph {Theorem II}}{6}{}%
+\contentsline {section}{\numberline {1}Einleitung}{3}{section.1}%
+\contentsline {section}{\numberline {2}Motivation des Themas}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}\textrm {Das Irrationalitätsmaß}}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}\textrm {Beispiele zum Irrationalitätsmaß}}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Zentrale Fragestellung des \emph {Satzes von Roth}}{4}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Grundlagen und Voraussetzungen}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}algebraische Zahlen}{4}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Satz von Roth (\emph {Theorem I})}{4}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Normieren des Polynoms}{4}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Polynome}{5}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Definition der Polynome}{5}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Der Inhalt eines Polynoms}{6}{subsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.3}Restpolynom}{6}{subsubsection.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.4.4}Index eines Polynoms}{6}{subsubsection.3.4.4}%
+\contentsline {subsection}{\numberline {3.5}Lemma 1}{6}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Lemma 2}{6}{subsection.3.6}%
+\contentsline {section}{\numberline {4}Konstruktion des Polynoms R (\emph {Theorem II})}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Aussage des \emph {Theorem II}}{7}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Lemma 3}{7}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Lemma 4}{7}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Lemma 5}{7}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Beweis des \emph {Theorem II}}{7}{subsection.4.5}%
