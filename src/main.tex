@@ -7,15 +7,27 @@
 \title{Seminararbeit zum Vortrag ``Satz von Roth I'' im Seminar ``Analysis'' bei Prof. Dr. Hein}
 \author{Marius Müller}
 \date{Juli 2022}
+
+\setlength{\parindent}{0pt}
+
 % Packages
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{mathtools}
 \usepackage{hyperref}
-\usepackage{stmaryrd}
+\usepackage{amssymb}
 
 \newcommand{\overbar}[1]{\mkern -3mu\overline{\mkern+3mu#1\mkern+4mu}\mkern -3mu}
 \newcommand{\content}[1]{\left| \overbar{#1} \right|}
+\DeclareMathOperator{\ind}{ind}
+\newcommand{\enum}[2]{#1, \dots, #2}
+\newcommand{\den}[1]{\frac{1}{#1}}
+\newenvironment{proof}
+    {\newline \emph{Beweis}. \newline}
+    {\hfill $Q.e.d.$}
+\newenvironment{proofname}[1]
+    {\newline \emph{Beweis}#1: \newline}
+    {\hfill $Q.e.d.$}
 
 % Document
 \begin{document}
@@ -25,11 +37,11 @@
     \vfill
 
     \begin{abstract}
-        \textrm{Diese Arbeit behandelt den Satz von Thue-Siegel-Roth,
-        der mittels des Irrationalitätsmaßes eine Aussage über die Irrationalität algebraisch irrationaler Zahlen liefert.
+        \textrm{Diese Arbeit behandelt den \emph{Satz von Thue-Siegel-Roth}, der mittels des Irrationalitätsmaßes eine
+        Aussage über die Irrationalität algebraisch irrationaler Zahlen liefert.
         \newline
         In dieser Arbeit wird zur Thematik hingeführt, die nötigen Grundlagen behandelt und das erste Theorem im Beweis
-        des Satzes von Roth erklärt und bewiesen.}
+        des Satzes erklärt und bewiesen.}
     \end{abstract}
 
     \newpage
@@ -41,196 +53,21 @@
     \section{Einleitung}
     \label{sec:intro}
         \textrm{Der \emph{Satz von Thue-Siegel-Roth} (im Folgenden kurz \emph{Satz von Roth} genannt) wurde erstmals von
-        Klaus Friedrich Roth bewiesen, der im Jahre 1958 für diesen Meilenstein die \emph{Fields-Medallie} verliehen bekam.
+        \emph{Klaus Friedrich Roth} bewiesen, der im Jahre 1958 für diesen Meilenstein die \emph{Fields-Medallie}
+        verliehen bekam.
         \newline
         Diese Arbeit ist eng an das Kapitel VI des Buches ``An Introduction To Diophantine Approximation'' von
         John William Scott Cassels aus dem Jahre 1957 angelehnt.
         \newline
         Der Beweis des \emph{Satzes von Roth} gliedert sich hier in drei Theorems.\ Von diesen wird in dieser
         Arbeit der erste Satz, das \emph{Theorem II}, beschrieben, erklärt und bewiesen (der \emph{Satz von Roth} selbst
-        ist hier das \emph{Theorem I}; der Übersichtlichkeit halber wird sich an die Nummerierung der Quelle gehalten.)}
+        ist hier das \emph{Theorem I}; der Übersichtlichkeit halber wird sich an die Nummerierung der Quelle gehalten,
+        die Notation wurde jedoch stellenweise abgeändert.)}
 
-    \section{Motivation des Themas}
-    \label{sec:motivation}
-        \textrm{Das sogenannte \emph{Irrationalitätsmaß} quantifiziert die Irrationalität einer reellen Zahl. Dazu wird
-        die folgende Definition verwendet:}
+    \input{motivation-topic.tex}
+    
+    \input{preliminaries.tex}
 
-        \subsection{\textrm{Das Irrationalitätsmaß}}
-        \label{subsec:irr-measure}
-            \textrm{Sei $x \in \mathbb{R}$ beliebig. Sei $M$ die Menge aller $\mu \in \mathbb{R}$, sodass die Ungleichung
-            \begin{equation*}
-                0 < |x - \frac{p}{q}| < \frac{1}{q^\mu}
-            \end{equation*}
-            nur endlich viele Lösungen in $p \in \mathbb{Z}, q \in \mathbb{N}$
-            besitzt.\ Dann heißt
-            \begin{equation*}
-                \mu(x) \coloneqq \inf(M)
-            \end{equation*}
-            das \emph{Irrationalitätsmaß} von $x$.
-            \newline
-            Die folgenden Beispiele illustrieren diese Definition.}
-
-        \subsection{\textrm{Beispiele zum Irrationalitätsmaß}}
-        \label{subsec:examples-irr-measure}
-            \begin{itemize}
-                \item \textrm{Für $x \in \mathbb{Q}$ gilt: $\mu(x) = 1$}
-                \item \textrm{Für irrationale $x$ wurde gezeigt, dass gilt: $\mu(x) \geq 2$}
-                \item \textrm{Für die \emph{eulersche Zahl} $e$ gilt $\mu(e) = 2$}
-                \item \textrm{Das Irrationalitätsmaß der Kreiszahl $\pi$ ist bisher unbekannt.\ Der neuste Fortschritt
-                            setzt die obere Schranke bei $\mu(\pi) \leq 7,1032\dots$ fest.}
-            \end{itemize}
-
-        \subsection{Zentrale Fragestellung des \emph{Satzes von Roth}}
-        \label{subsec:question}
-            \textrm{Es stellt sich nach den oben genannten Beispielen die Frage, ob auch alle irrationale Zahlen dasselbe
-            Irrationalitätsmaß besitzen. Hier liefert der \emph{Satz von Roth} eine teilweise Antwort:
-            \newline
-            Das Irrationalitätsmaß aller \emph{algebraischen} irrationalen Zahlen ist genau zwei.}
-
-    \section{Grundlagen und Voraussetzungen}
-    \label{sec:basics}
-        Algebraische Zahlen, formale Aussage des Satzes (\emph{Theorem I}), oBdA $a_n = 1$ und Sachen zu Polynomen
-        
-        \subsection{algebraische Zahlen}
-        \label{subsec:algebraic-numbers}
-            \textrm{Sei $z \in \mathbb{C}$. $z$ heißt \emph{algebraisch} genau dann, wenn gilt:}
-            \begin{equation}
-                \exists f \in \mathbb{Q}[x] : f(z) = 0 \label{eq:def-algebraic}
-            \end{equation}
-            \textrm{d.h.\ falls z eine Lösung eines Polynoms mit rationalen Koeffizienten ist.\ OBdA kann angenommen
-            werden, dass $f \in \mathbb{Q}[x]$, da sich die Gleichung $f(x) = 0$ mit dem Produkt der Nenner der
-            Koeffizienten der Form $a_n = \frac{p_n}{q_n}$, d.h.\ mit $\prod_{i=1}^k q_i$ multiplizieren lässt, wodurch
-            alle Koeffizienten ganzzahlig werden, die Gleichung und damit auch das resultierende Polynom jedoch dieselben
-            Lösungen bzw.\ Nullstellen besitzen.
-            \newline
-            Weiterhin lässt sich oBdA annehmen, dass für den Koeffizienten der höchsten Potenz von $x$ gilt: $a_n \neq 0$.}
-        
-        \subsection{Satz von Roth (\emph{Theorem I})}
-        \label{subsec:th1}
-            Sei $\xi \in \mathbb{R}$ algebraisch irrational und $\delta > 0$ beliebig.\ Dann besitzt die Ungleichung
-            \begin{equation}
-                0 < | \xi - \frac{p}{q} | < q^{-(2+\delta)} \label{eq:svr}
-            \end{equation}
-            \textrm{nur endlich viele Lösungen in $p \in \mathbb{Z}$, $q \in \mathbb{N}$.
-            \newline \newline
-            Zunächst wird gezeigt, dass der Satz nur für $a_n = 1$ aus  zu zeigen ist.}
-        
-        \subsection{Normieren des Polynoms}
-        \label{subsec:norm-poly}
-            \textrm{Angenommen, der \hyperref[eq:svr]{\emph{Satz von Roth}} gelte.\ Dann gilt für $a_n \xi \coloneq \Xi$:}
-            \begin{equation*}
-                0 = \Xi^n + a_{n-1} \Xi^{n-1} + \dots + a_n^{n-1} a_0
-            \end{equation*}
-            \textrm{und nach Multiplikation mit $\left| a_n \right|$ und geeigneter Abschätzung von~\eqref{eq:svr} gilt:}
-            \begin{equation*}
-                \left| \Xi - a_n \frac{p}{q} \right| < \left| a_n \right| q^{-(2+\delta)} < q^{-(2+\frac{1}{2}\delta)}
-            \end{equation*}
-            \textrm{für hinreichend große $q$.\ Da $\delta$ beliebig gewählt wurde, gilt der Satz somit nun für $\Xi$
-            genau dann, wenn er für $\xi$ gilt. Somit gilt insgesamt oBdA:}
-            \begin{equation}
-                f(x) = x^n + a_{n-1} x^{n-1} + \dots + a_0 \  \text{mit} \  f(\xi) = 0 \  \text{und} \  a_{n-1}, \dots,
-                a_0 \in \mathbb{Z}. \label{eq:prereq}
-            \end{equation}
-            \newline
-            \textrm{Seien im Übrigen}
-            \begin{equation}
-                n = \deg(f) \  \text{und} \  a = \max\{ 1, | a_{n-1} |, \dots, | a_0 | \}. \label{eq:def-a}
-            \end{equation}
-            \newline
-            Diese werden im weiteren Verlauf der Arbeit und des Beweises verwendet werden.
-
-        \subsection{Polynome}
-        \label{subsec:polynomials}
-            \textrm{In diesem Abschnitt werden Polynome und weitere Begriffe definiert, die in diesem Kapitel verwendet werden.
-            Darauf folgen zwei Lemmata, die diese jeweils kurz näher beleuchten.}
-        
-            \subsubsection{Definition der Polynome}
-            \label{subsubsec:def-poly}
-                Es werden Polynome der folgenden Form behandelt:
-                \begin{equation}
-                    R : \mathbb{R}^m \rightarrow \mathbb{R},\
-                    R(x_1, \dots, x_m) = \sum_{\substack{0 \leq j_\mu \leq r_\mu \\ 1 \leq \mu \leq m}}
-                    c_{j_1, \dots, j_m} \cdot x_1^{j_1} \dots x_m^{j_m}. \label{eq:def-poly}
-                \end{equation}
-                Wobei $m \in \mathbb{N}$, $r_\mu$ der Grad des Polynoms in $x_\mu$ und $c_{j_1, \dots, j_m} \in
-                \mathbb{R}$ und seien.
-                \newline \newline
-                \emph{Beispiel}: Seien $m = 2,\ r_1 = 2 \  \text{und} \  r_2 = 1$.
-                \newline
-                \textrm{Das zugehörige Polynom nach obiger Definition sieht folgendermaßen aus:}
-                \begin{equation*}
-                    R_{Bsp}(x_1, x_2) = c_{0,0} x_1^0 x_2^0 + c_{0,1} x_1^0 x_2^1 + c_{1,0} x_1^1 x_2^0 + c_{1,1} x_1^1
-                    x_2^1 + c_{2, 0} x_1^2 x_2^0 + c_{2,1} x_1^2 x_2^1
-                \end{equation*}
-                Nach konkreter Definition der Koeffizienten ergibt sich beispielsweise:
-                \begin{equation*}
-                    R_{Bsp}(x_1, x_2) = 7 - \sqrt{\pi} x_2^1 + \frac{e}{\sqrt[3]{\gamma}} x_1^2 x_2^1
-                \end{equation*}
-            
-            \subsubsection{Der Inhalt eines Polynoms}
-            \label{subsubsec:content-poly}
-                Sei R ein Polynom nach \hyperref[subsubsec:def-poly]{obiger Definition}.\ Dann sei der \emph{Inhalt} eines
-                Polynoms wie folgt definiert:
-                \begin{equation}
-                     \content{R} \coloneq \max\{|c_{j_1, \dots, j_m}| \} \  \forall \  0 \leq j_\mu \leq r_\mu, \
-                     1 \leq \mu \leq m \label{eq:def-content}
-                \end{equation}
-            
-            \subsubsection{Restpolynom}
-            \label{subsubsec:def-rempoly}
-                Sei R ein Polynom nach \hyperref[subsubsec:def-poly]{obiger Definition}.\ Es wird
-                \begin{equation}
-                    R_{i_1, \dots, i_m} = \frac{1}{i_1! \dots i_m!} \frac{\partial^{i_1 + \dots + i_m}}{
-                    \partial x_1^{i_1} \dots \partial x_m^{i_m}} (R) \label{eq:def-rempoly}
-                \end{equation}
-                das \emph{Restpolynom} von R genannt.
-            
-            \subsubsection{Index eines Polynoms}
-            \label{subsubsec:def-index}
-                \textrm{Sei R ein Polynom nach \hyperref[subsubsec:def-poly]{obiger Definition}, $\alpha \in \mathbb{R}^m$
-                und $s \in \mathbb{N}^m$.\ $I$ heißt \emph{Index} von R an der Stelle $\alpha$ bezüglich $s$, genau dann,
-                wenn gilt:}
-                \begin{equation}
-                    I \coloneq ind(R) = \min \sum_{1 \leq \mu \leq m} \frac{i_\mu}{s_\mu} \text{, sodass} \ R_{i_1, \dots, i_m}(\alpha)
-                    \neq 0. \label{eq:def-index}
-                \end{equation}
-                \textrm{Dies erinnert an die \emph{Nullstellenordnung} einer Funktion, lässt sich jedoch mit Hilfe von $s$
-                noch zusätzlich gewichten.}
-                \newline
-                \textrm{Zu diesem Begriff folgt wie erwähnt ein \hyperref[subsec:lemma2]{Lemma}, das weitere Eigenschaften darlegt.\ In
-                dieser Arbeit wird diese Definition jedoch nicht weiter verwendet; er findet lediglich in den Beweisen
-                der weiteren Theorems im Beweis des \emph{Satzes von Roth} weitere Anwendung.}
-        
-        \subsection{Lemma 1}
-        \label{subsec:lemma1}
-            Lemma 1 mit Beweis (bisschen was zum Taylor Ableitungen Bums)
-        
-        \subsection{Lemma 2}
-        \label{subsec:lemma2}
-            Lemma 2 maybe mit Beweis? (paar Eigenschaften zum Index)
-
-    \section{Konstruktion des Polynoms R (\emph{Theorem II})}
-    \label{sec:th2}
-        Zwischengelaber mit Kontext, Struktur, Sinn im Beweis, etc.
-
-        \subsection{Aussage des \emph{Theorem II}}
-        \label{subsec:th2}
-            \textrm{Satz 2 erklären}
-
-        \subsection{Lemma 3}
-        \label{subsec:lemma3}
-            Lemma 3 halt, maybe mit Beweis?
-
-        \subsection{Lemma 4}
-        \label{subsec:lemma4}
-            Lemma 4 halt, maybe mit Beweis?
-
-        \subsection{Lemma 5}
-        \label{subsec:lemma5}
-            Lemma 5 halt, maybe mit Beweis?
-
-        \subsection{Beweis des \emph{Theorem II}}
-        \label{subsec:proof-th-2}
-            letztendlicher Beweis des Theorem II
+    \input{theorem-ii.tex}
         
 \end{document}
