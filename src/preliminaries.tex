@@ -1,0 +1,87 @@
+
+\section{Grundlagen und Voraussetzungen}
+    \label{sec:basics}
+    \textrm{In diesem Kapitel werden die nötigen Grundlagen behandelt, die für den Beweis des \emph{Satzes von Roth}
+    benötigt werden. Außerdem wird die formale Aussage des Satzes dargelegt; der Beweis wird jedoch nicht in dieser
+    Arbeit vollzogen.}
+    
+    \subsection{algebraische Zahlen}
+        \label{subsec:algebraic-numbers}
+        \textrm{Sei $z \in \mathbb{C}$. $z$ heißt \emph{algebraisch} genau dann, wenn gilt:}
+        \begin{equation}
+            \exists f \in \mathbb{Q}[x] : f(z) = 0 \label{eq:def-algebraic}
+        \end{equation}
+        \textrm{d.h.\ falls z eine Lösung eines Polynoms mit rationalen Koeffizienten ist.\ Sei $n = \deg f$. OBdA kann
+        angenommen werden, dass $f \in \mathbb{Q}[x]$, da sich die Gleichung $f(x) = 0$ mit dem Produkt der Nenner der
+        Koeffizienten der Form $a_k = \frac{p_k}{q_k} (\forall 1 \leq k \leq n)$, d.h.\ mit $\prod_{k=1}^n q_i$
+        multiplizieren lässt, wodurch alle Koeffizienten ganzzahlig werden, die Gleichung und damit auch das
+        resultierende Polynom jedoch dieselben Lösungen bzw.\ Nullstellen besitzen.
+        \newline
+        Weiterhin lässt sich oBdA annehmen, dass für den Koeffizienten der höchsten Potenz von $x$ gilt: $a_n \neq 0$.}
+    
+    \subsection{Satz von Roth (\emph{Theorem I})}
+        \label{subsec:th1}
+        Sei $\xi \in \mathbb{R}$ algebraisch irrational und $\delta > 0$ beliebig.\ Dann besitzt die Ungleichung
+        \begin{equation}
+            0 < \left| \xi - \frac{p}{q} \right| < q^{-(2+\delta)} \label{eq:svr}
+        \end{equation}
+        \textrm{nur endlich viele Lösungen in $p \in \mathbb{Z}$, $q \in \mathbb{N}$.
+        \newline
+        \textrm{Hiermit liefert der Satz $2$ als obere Schranke für das Irrationalitätsmaß algebraisch irrationaler
+        Zahlen; zusammen mit der unteren Schranke von ebenfalls $2$ gilt somit $\mu(x) = 2$ für alle algebraisch
+        irrationalen Zahlen $x$.}
+        \newline \newline
+        Zunächst wird gezeigt, dass der Satz nur für $a_n = 1$ aus~\ref{subsec:algebraic-numbers} zu zeigen ist.}
+    
+    \subsection{Normieren des Polynoms}
+        \label{subsec:norm-poly}
+        \textrm{Angenommen, der \hyperref[eq:svr]{\emph{Satz von Roth}} gelte.\ Dann gilt für $a_n \xi \coloneq \Xi$:}
+        \begin{equation*}
+            0 = \Xi^n + a_{n-1} \Xi^{n-1} + \dots + a_n^{n-1} a_0
+        \end{equation*}
+        \textrm{und nach Multiplikation mit $\left| a_n \right|$ und geeigneter Abschätzung von~\eqref{eq:svr} gilt:}
+        \begin{equation*}
+            \left| \Xi - a_n \frac{p}{q} \right| < \left| a_n \right| q^{-(2+\delta)} < q^{-(2+\frac{1}{2}\delta)}
+        \end{equation*}
+        \textrm{für hinreichend große $q$.\ Da $\delta$ beliebig gewählt wurde, gilt der Satz somit nun für $\Xi$
+            genau dann, wenn er für $\xi$ gilt. Somit gilt insgesamt oBdA:}
+        \begin{equation}
+            f(x) = x^n + a_{n-1} x^{n-1} + \dots + a_0 \  \text{mit} \  f(\xi) = 0 \  \text{und} \  a_{n-1}, \dots,
+            a_0 \in \mathbb{Z}. \label{eq:prereq}
+        \end{equation}
+        \newline
+        \textrm{Seien im Übrigen}
+        \begin{equation}
+            n = \deg(f) \  \text{und} \  a = \max\{ 1, | a_{n-1} |, \dots, | a_0 | \}. \label{eq:def-n-a}
+        \end{equation}
+        \newline
+        Diese werden im weiteren Verlauf der Arbeit und des Beweises verwendet werden.
+    
+    \input{polynomials.tex}
+    
+    \subsection{Lemma 1}
+        \label{subsec:lemma1}
+        Sei R ein Polynom nach \hyperref[subsubsec:def-poly]{obiger Definition}.\ Dann gilt:
+        \begin{enumerate}
+            \item \textrm{$R$ hat ausschließlich Koeffizienten in $\mathbb{Z} \Rightarrow R_{i_1, \dots, i_m}$ hat
+            auch ausschließlich Koeffizienten in $\mathbb{Z}$.}
+            \item \textrm{$R$ hat Grad $r_\mu$ in $x_\mu \Rightarrow R_{i_1, \dots, i_m}$ hat höchstens Grad $r_\mu
+            - i_\mu$ in $x_\mu$ und verschwindet für $r_\mu < i_\mu$. ($\forall 1 \leq \mu \leq m$)}
+            \item $\content{R_{i_1, \dots, i_m}} \leq 2^{r_1 + \dots + r_m} \content{R}$.
+        \end{enumerate}
+        \textrm{Diese Aussagen sind recht trivial, daher wird hier auf einen ausführlichen Beweis
+        verzichtet und dem*der Leser*in zur Übung als Aufgabe hinterlassen.}
+    
+    \subsection{Lemma 2}
+        \label{subsec:lemma2}
+        Seien $\alpha \in \mathbb{R}^m,\ s \in \mathbb{N}^m$ und $R$ und $T$ Polynome nach \hyperref
+        [subsubsec:def-poly]{obiger Definition}.\ Dann gilt:
+        \begin{enumerate}
+            \item $\ind(R_{\enum{i_1}{i_m}}) \geq \ind(R) - \sum \frac{i_\mu}{s_\mu}$
+            \item $\ind(R_1 + R_2) \geq \min \{ \ind(R_1), \ind(R_2) \}$
+            \item $\ind(R \cdot T) = \ind(R) +\ind(T)$
+        \end{enumerate}
+        \textrm{Da der Begriff des \emph{Index} in dieser Arbeit keine weitere Anwendung findet und die Aussagen
+        außerdem nach kurzem Durchdenken ebenfalls recht trivial sind, wird auch hier auf einen ausführlichen Beweis
+        verzichtet.}
+    

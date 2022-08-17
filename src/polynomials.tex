@@ -1,0 +1,67 @@
+
+\subsection{Polynome}
+    \label{subsec:polynomials}
+    \textrm{In diesem Abschnitt werden Polynome und weitere Begriffe definiert, die in diesem Kapitel verwendet werden.
+    Darauf folgen zwei Lemmata, die diese jeweils kurz näher beleuchten.}
+    
+    \subsubsection{Definition der Polynome}
+        \label{subsubsec:def-poly}
+        Es werden Polynome der folgenden Form behandelt:
+        \begin{equation}
+            R : \mathbb{R}^m \rightarrow \mathbb{R},\
+            R(x_1, \dots, x_m) = \sum_{\substack{0 \leq j_\mu \leq r_\mu \\ 1 \leq \mu \leq m}}
+            c_{j_1, \dots, j_m} \cdot x_1^{j_1} \dots x_m^{j_m} \label{eq:def-poly}
+        \end{equation}
+        Wobei $m \in \mathbb{N}$, $r_\mu$ der Grad des Polynoms in $x_\mu$ und $c_{j_1, \dots, j_m} \in
+        \mathbb{R}$ und seien.
+        \newline \newline
+        \emph{Beispiel}: Seien $m = 2,\ r_1 = 2 \  \text{und} \  r_2 = 1$.
+        \newline
+        \textrm{Das zugehörige Polynom nach obiger Definition sieht folgendermaßen aus:}
+        \begin{equation*}
+            R_{Bsp}(x_1, x_2) = c_{0,0} x_1^0 x_2^0 + c_{0,1} x_1^0 x_2^1 + c_{1,0} x_1^1 x_2^0 + c_{1,1} x_1^1
+            x_2^1 + c_{2, 0} x_1^2 x_2^0 + c_{2,1} x_1^2 x_2^1
+        \end{equation*}
+        Nach konkreter Definition der Koeffizienten ergibt sich beispielsweise:
+        \begin{equation*}
+            R_{Bsp}(x_1, x_2) = 7 - \sqrt{\pi} x_2^1 + \frac{e}{\sqrt[3]{\gamma}} x_1^2 x_2^1
+        \end{equation*}
+    
+    \subsubsection{Der Inhalt eines Polynoms}
+        \label{subsubsec:content-poly}
+        Sei R ein Polynom nach \hyperref[subsubsec:def-poly]{obiger Definition}.\ Dann sei der \emph{Inhalt} eines
+        Polynoms wie folgt definiert:
+        \begin{equation}
+            \content{R} \coloneq \max\{|c_{j_1, \dots, j_m}| \} \  \forall \  0 \leq j_\mu \leq r_\mu, \
+            1 \leq \mu \leq m \label{eq:def-content}
+        \end{equation}
+    
+    \subsubsection{Restpolynom}
+        \label{subsubsec:def-rempoly}
+        Sei R ein Polynom nach \hyperref[subsubsec:def-poly]{obiger Definition} und seien $i_1, \dots i_m \in
+        \mathbb{N}_0$.\ Es wird
+        \begin{equation}
+            R_{i_1, \dots, i_m} = \frac{1}{i_1! \dots i_m!} \frac{\partial^{i_1 + \dots + i_m}}{
+                \partial x_1^{i_1} \dots \partial x_m^{i_m}} (R) \label{eq:def-rempoly}
+        \end{equation}
+        das \emph{Restpolynom} von R genannt.
+    
+    \subsubsection{Index eines Polynoms}
+        \label{subsubsec:def-index}
+        \textrm{Sei R ein Polynom nach \hyperref[subsubsec:def-poly]{obiger Definition}, $\alpha \in \mathbb{R}^m$
+            und $s \in \mathbb{N}^m$.\ $I$ heißt \emph{Index} von R an der Stelle $\alpha$ bezüglich $s$, genau dann,
+            wenn gilt:}
+        \begin{equation}
+            I \coloneq \ind(R) \coloneq \min \sum_{1 \leq \mu \leq m} \frac{i_\mu}{s_\mu} \text{, sodass} \
+            R_{i_1, \dots, i_m}(\alpha) \neq 0. \label{eq:def-index}
+        \end{equation}
+        Falls R verschwindet, wird konventionell $\ind(R) \coloneq \infty$ gesetzt.
+        \newline
+        \textrm{Dies erinnert an die \emph{Nullstellenordnung} einer Funktion (beispielsweise Nullstellen
+        \emph{zweiter Ordnung} beziehungsweise \emph{zweifache} Nullstellen), lässt sich jedoch mit Hilfe des
+        Vektors $s$ noch zusätzlich gewichten.
+        \newline
+        Zu diesem Begriff folgt wie erwähnt ein \hyperref[subsec:lemma2]{Lemma}, das weitere Eigenschaften
+        darlegt.\ In dieser Arbeit wird diese Definition jedoch nicht weiter verwendet; er findet lediglich in
+        den Beweisen der weiteren Theorems im Beweis des \emph{Satzes von Roth} weitere Anwendung.}
+    
