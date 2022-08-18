@@ -9,13 +9,13 @@
         Es werden Polynome der folgenden Form behandelt:
         \begin{equation}
             R : \mathbb{R}^m \rightarrow \mathbb{R},\
-            R(x_1, \dots, x_m) = \sum_{\substack{0 \leq j_\mu \leq r_\mu \\ 1 \leq \mu \leq m}}
-            c_{j_1, \dots, j_m} \cdot x_1^{j_1} \dots x_m^{j_m} \label{eq:def-poly}
+            R(\enum{x_1}{x_m}) = \sum_{\substack{0 \leq j_\mu \leq r_\mu \\ 1 \leq \mu \leq m}}
+            c_{\enum{j_1}{j_m}} \cdot \spdots{x_1^{j_1}}{x_m^{j_m}} \label{eq:def-poly}
         \end{equation}
         Wobei $m \in \mathbb{N}$, $r_\mu$ der Grad des Polynoms in $x_\mu$ und $c_{j_1, \dots, j_m} \in
         \mathbb{R}$ und seien.
         \newline \newline
-        \emph{Beispiel}: Seien $m = 2,\ r_1 = 2 \  \text{und} \  r_2 = 1$.
+        \emph{Beispiel}: Seien $m = 2,\ r_1 = 2 \sptext{und} r_2 = 1$.
         \newline
         \textrm{Das zugehörige Polynom nach obiger Definition sieht folgendermaßen aus:}
         \begin{equation*}
@@ -32,17 +32,17 @@
         Sei R ein Polynom nach \hyperref[subsubsec:def-poly]{obiger Definition}.\ Dann sei der \emph{Inhalt} eines
         Polynoms wie folgt definiert:
         \begin{equation}
-            \content{R} \coloneq \max\{|c_{j_1, \dots, j_m}| \} \  \forall \  0 \leq j_\mu \leq r_\mu, \
+            \content{R} \coloneq \max\{|c_{\enum{j_1}{j_m}}| \} \  \forall \  0 \leq j_\mu \leq r_\mu, \
             1 \leq \mu \leq m \label{eq:def-content}
         \end{equation}
     
     \subsubsection{Restpolynom}
         \label{subsubsec:def-rempoly}
-        Sei R ein Polynom nach \hyperref[subsubsec:def-poly]{obiger Definition} und seien $i_1, \dots i_m \in
+        Sei R ein Polynom nach \hyperref[subsubsec:def-poly]{obiger Definition} und seien $\enum{i_1}{i_m} \in
         \mathbb{N}_0$.\ Es wird
         \begin{equation}
-            R_{i_1, \dots, i_m} = \frac{1}{i_1! \dots i_m!} \frac{\partial^{i_1 + \dots + i_m}}{
-                \partial x_1^{i_1} \dots \partial x_m^{i_m}} (R) \label{eq:def-rempoly}
+            R_{\enum{i_1}{i_m}} = \den{\enum{i_1!}{i_m!}} \frac{\partial^{\dsum{i_1}{i_m}}}{
+                \spdots{\partial x_1^{i_1}}{\partial x_m^{i_m}}} (R) \label{eq:def-rempoly}
         \end{equation}
         das \emph{Restpolynom} von R genannt.
     
@@ -52,8 +52,8 @@
             und $s \in \mathbb{N}^m$.\ $I$ heißt \emph{Index} von R an der Stelle $\alpha$ bezüglich $s$, genau dann,
             wenn gilt:}
         \begin{equation}
-            I \coloneq \ind(R) \coloneq \min \sum_{1 \leq \mu \leq m} \frac{i_\mu}{s_\mu} \text{, sodass} \
-            R_{i_1, \dots, i_m}(\alpha) \neq 0. \label{eq:def-index}
+            I \coloneq \ind(R) \coloneq \min_{(\enum{i_1}{i_m}) \in \mathbb{N}_0^m} \sum_{1 \leq \mu \leq m} \frac{i_\mu}
+            {s_\mu}, \sptext{sodass} R_{i_1, \dots, i_m}(\alpha) \neq 0. \label{eq:def-index}
         \end{equation}
         Falls R verschwindet, wird konventionell $\ind(R) \coloneq \infty$ gesetzt.
         \newline

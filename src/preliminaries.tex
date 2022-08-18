@@ -37,22 +37,22 @@
         \label{subsec:norm-poly}
         \textrm{Angenommen, der \hyperref[eq:svr]{\emph{Satz von Roth}} gelte.\ Dann gilt für $a_n \xi \coloneq \Xi$:}
         \begin{equation*}
-            0 = \Xi^n + a_{n-1} \Xi^{n-1} + \dots + a_n^{n-1} a_0
+            0 = \Xi^n + \dsum{a_{n-1} \Xi^{n-1}}{a_n^{n-1} a_0}
         \end{equation*}
         \textrm{und nach Multiplikation mit $\left| a_n \right|$ und geeigneter Abschätzung von~\eqref{eq:svr} gilt:}
         \begin{equation*}
-            \left| \Xi - a_n \frac{p}{q} \right| < \left| a_n \right| q^{-(2+\delta)} < q^{-(2+\frac{1}{2}\delta)}
+            \left| \Xi - a_n \frac{p}{q} \right| < \left| a_n \right| q^{-(2+\delta)} < q^{-(2+\den{2}\delta)}
         \end{equation*}
         \textrm{für hinreichend große $q$.\ Da $\delta$ beliebig gewählt wurde, gilt der Satz somit nun für $\Xi$
             genau dann, wenn er für $\xi$ gilt. Somit gilt insgesamt oBdA:}
         \begin{equation}
-            f(x) = x^n + a_{n-1} x^{n-1} + \dots + a_0 \  \text{mit} \  f(\xi) = 0 \  \text{und} \  a_{n-1}, \dots,
-            a_0 \in \mathbb{Z}. \label{eq:prereq}
+            f(x) = x^n + \dsum{a_{n-1} x^{n-1}}{a_0} \sptext{mit} f(\xi) = 0 \sptext{und} \enum{a_{n-1}}{a_0}
+            \in \mathbb{Z}. \label{eq:prereq}
         \end{equation}
         \newline
         \textrm{Seien im Übrigen}
         \begin{equation}
-            n = \deg(f) \  \text{und} \  a = \max\{ 1, | a_{n-1} |, \dots, | a_0 | \}. \label{eq:def-n-a}
+            n = \deg(f) \sptext{und} a = \max\{ 1, \enum{|a_{n-1}|}{|a_0|} \}. \label{eq:def-n-a}
         \end{equation}
         \newline
         Diese werden im weiteren Verlauf der Arbeit und des Beweises verwendet werden.
@@ -63,14 +63,14 @@
         \label{subsec:lemma1}
         Sei R ein Polynom nach \hyperref[subsubsec:def-poly]{obiger Definition}.\ Dann gilt:
         \begin{enumerate}
-            \item \textrm{$R$ hat ausschließlich Koeffizienten in $\mathbb{Z} \Rightarrow R_{i_1, \dots, i_m}$ hat
+            \item \textrm{$R$ hat ausschließlich Koeffizienten in $\mathbb{Z} \Rightarrow R_{\enum{i_1}{i_m}}$ hat
             auch ausschließlich Koeffizienten in $\mathbb{Z}$.}
-            \item \textrm{$R$ hat Grad $r_\mu$ in $x_\mu \Rightarrow R_{i_1, \dots, i_m}$ hat höchstens Grad $r_\mu
+            \item \textrm{$R$ hat Grad $r_\mu$ in $x_\mu \Rightarrow R_{\enum{i_1}{i_m}}$ hat höchstens Grad $r_\mu
             - i_\mu$ in $x_\mu$ und verschwindet für $r_\mu < i_\mu$. ($\forall 1 \leq \mu \leq m$)}
-            \item $\content{R_{i_1, \dots, i_m}} \leq 2^{r_1 + \dots + r_m} \content{R}$.
+            \item $\content{R_{\enum{i_1}{i_m}}} \leq 2^{\dsum{r_1}{r_m}} \content{R}$.
         \end{enumerate}
         \textrm{Diese Aussagen sind recht trivial, daher wird hier auf einen ausführlichen Beweis
-        verzichtet und dem*der Leser*in zur Übung als Aufgabe hinterlassen.}
+        verzichtet und dem*der Leser*in überlassen.}
     
     \subsection{Lemma 2}
         \label{subsec:lemma2}

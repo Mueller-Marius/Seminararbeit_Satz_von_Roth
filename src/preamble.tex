@@ -1,0 +1,26 @@
+
+% Packages
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{hyperref}
+\usepackage{amssymb}
+
+\setlength{\parindent}{0pt}
+
+\DeclareMathOperator{\ind}{ind}
+
+\newcommand{\content}[1]{\begin{tabular}{|c|}\hline \!#1\! \end{tabular}} %for Polynomials
+\newcommand{\enum}[2]{#1, \dots, #2}
+\newcommand{\dsum}[2]{#1 + \dots + #2}
+\newcommand{\spdots}[2]{#1 \dots #2}
+\newcommand{\sptext}[1]{\ \textrm{#1}\ }
+\newcommand{\den}[1]{\frac{1}{#1}}
+
+\newenvironment{proof}
+    {\newline \emph{Beweis}. \newline}
+    {\hfill $Q.e.d.$}
+\newenvironment{proofname}[1]
+    {\newline \emph{Beweis}(#1): \newline}
+    {\hfill $Q.e.d.$}
+    
