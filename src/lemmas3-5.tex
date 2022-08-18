@@ -1,7 +1,7 @@
 
 \subsection{Lemma 3}
     \label{subsec:lemma3}
-    Seien $N, M \in \mathbb{N} \sptext{mit} N > M$.
+    Seien $N, M \in \mathbb{N} \sptext{mit} N > M$ und seien
     \begin{equation*}
         L_j = \sum_{1 \leq k \leq N} a_{jk} z_k \sptext{mit} 1 \leq j \leq M
     \end{equation*}
@@ -11,7 +11,7 @@
         \left| a_{jk} \right| \leq A \ \ \forall \ 1 \leq j \leq M, 1 \leq k \leq N
     \end{equation*}
     \textrm{Dann besitzt das System $L$ in den Variablen $\enum{z_1}{z_N}$ Lösungen in $\mathbb{Z}$, die nicht alle
-    verschwinden, sodass gilt:}
+    verschwinden und sodass gilt:}
     \begin{equation*}
         L_j = 0 \sptext{mit} 1 \leq j \leq M \sptext{und} \left| z_i \right| \leq Z = \left[ (NA)^{\frac{M}{N-M}} \right]
         \sptext{mit} 1 \leq k \leq n.
@@ -27,7 +27,7 @@
     \begin{equation*}
         \xi^l = \dsum{a_{n-1, l}\xi^{n-1}}{a_{0,l}}
     \end{equation*}
-    \textrm{und für $a$ aus~\eqref{eq:prereq} gilt:}
+    und mit $a$ aus~\eqref{eq:def-n-a} gilt:
     \begin{equation*}
         \left| a_{a,l} \right| \leq (a + 1)^l
     \end{equation*}
@@ -41,9 +41,9 @@
     \begin{equation*}
         \frac{\sqrt{2m}}{\lambda} \spdots{(r_1 + 1)}{(r_m +1)}
     \end{equation*}
-    \textrm{viele Mengen an $\{ \enum{i_1}{i_m} \}$, die folgende Gleichung erfüllen:}
+    \textrm{viele $m$-Tupel $(\enum{i_1}{i_m})$, die folgende Ungleichung erfüllen:}
     \begin{equation*}
-        \sum \frac{i_\mu}{r_\mu} \leq \den{2} (m - \lambda) \ \ \forall \ 0 \leq i_\mu \leq, 1 \leq \mu \leq m
+        \sum_{\substack{0 \leq i_\mu \leq r_\mu \\ 1 \leq \mu \leq m}} \frac{i_\mu}{r_\mu} \leq \den{2} (m - \lambda)
     \end{equation*}
     \begin{proof}
         bla

@@ -12,8 +12,8 @@
             \exists f \in \mathbb{Q}[x] : f(z) = 0 \label{eq:def-algebraic}
         \end{equation}
         \textrm{d.h.\ falls z eine Lösung eines Polynoms mit rationalen Koeffizienten ist.\ Sei $n = \deg f$. OBdA kann
-        angenommen werden, dass $f \in \mathbb{Q}[x]$, da sich die Gleichung $f(x) = 0$ mit dem Produkt der Nenner der
-        Koeffizienten der Form $a_k = \frac{p_k}{q_k} (\forall 1 \leq k \leq n)$, d.h.\ mit $\prod_{k=1}^n q_i$
+        angenommen werden, dass $f \in \mathbb{Z}[x]$, da sich die Gleichung $f(x) = 0$ mit dem Produkt der Nenner der
+        Koeffizienten der Form $a_k = \frac{p_k}{q_k} \ (\forall \  1 \leq k \leq n)$, d.h.\ mit $\prod_{k=1}^n q_k$
         multiplizieren lässt, wodurch alle Koeffizienten ganzzahlig werden, die Gleichung und damit auch das
         resultierende Polynom jedoch dieselben Lösungen bzw.\ Nullstellen besitzen.
         \newline
@@ -35,9 +35,10 @@
     
     \subsection{Normieren des Polynoms}
         \label{subsec:norm-poly}
-        \textrm{Angenommen, der \hyperref[eq:svr]{\emph{Satz von Roth}} gelte.\ Dann gilt für $a_n \xi \coloneq \Xi$:}
+        \textrm{Angenommen, der \hyperref[eq:svr]{\emph{Satz von Roth}} gelte.\ Dann folgt aus $f(\xi) = 0$ aus~\ref
+        {subsec:algebraic-numbers} durch Multiplikation mit $a_n^{n-1}$ für $a_n \xi \coloneq \Xi$:}
         \begin{equation*}
-            0 = \Xi^n + \dsum{a_{n-1} \Xi^{n-1}}{a_n^{n-1} a_0}
+            0 = \Xi^n + a_{n-1} \Xi^{n-1} + \dsum{a_{n-2}a_n \Xi^{n-2}}{a_n^{n-1} a_0}
         \end{equation*}
         \textrm{und nach Multiplikation mit $\left| a_n \right|$ und geeigneter Abschätzung von~\eqref{eq:svr} gilt:}
         \begin{equation*}
@@ -55,7 +56,7 @@
             n = \deg(f) \sptext{und} a = \max\{ 1, \enum{|a_{n-1}|}{|a_0|} \}. \label{eq:def-n-a}
         \end{equation}
         \newline
-        Diese werden im weiteren Verlauf der Arbeit und des Beweises verwendet werden.
+        Diese werden im weiteren Verlauf der Arbeit und des Beweises verwendet.
     
     \input{polynomials.tex}
     
