@@ -3,16 +3,16 @@
     \label{sec:th2}
     \textrm{In diesem Kapitel wird das Polynom $R$ konstruiert, das später im Beweis des \emph{Satzes von Roth}
     verwendet werden wird.\ Zum Beweis des \emph{Theorem II} werden drei Lemmata benötigt, von denen das \hyperref
-    [subsec:lemma3]{Lemma 3} das zentrale Lemma ist, Das am Ende die Bestimmung der Koeffizienten des Polynoms
+    [subsec:lemma3]{Lemma 3} das zentrale Lemma ist, das am Ende die Bestimmung der Koeffizienten des Polynoms
     ermöglicht.}
     
     \subsection{Aussage des \emph{Theorem II}}
         \label{subsec:th2}
-        Sei $\varepsilon > 0$ beliebig und
+        Sei $\varepsilon > 0$ beliebig, $\xi$ algebraisch irrational, sei
         \begin{equation}
-            m \in \mathbb{Z} \  \text{mit} \  m > 8 n^2 \varepsilon^{-2} \label{eq:def-m}
+            m \in \mathbb{Z} \text{, sodass} \  m > 8 n^2 \varepsilon^{-2} \label{eq:def-m}
         \end{equation}
-        \textrm{für $n = \deg f$ aus~\eqref{eq:def-n-a}.
+        \textrm{für $n = \deg f$ aus~\eqref{eq:def-n-a} und seien $\enum{r_1}{r_m} \in \mathbb{N}$.
         Dann existiert ein $R$ nach Definition in~\ref{subsubsec:def-poly} mit ganzzahligen Koeffizienten und höchstens
         Grad $r_\mu$ in $x_\mu \ (\forall \ 1 \leq \mu \leq m)$, für das gilt:}
         \begin{enumerate}
@@ -21,8 +21,8 @@
                 $(\enum{r_1}{r_m})$}
             \item $\content{R} \leq \gamma^{\dsum{r_1}{r_m}}$ mit $\gamma = 4 (a + 1)$
         \end{enumerate}
-        \textrm{mit a aus~\eqref{eq:def-n-a}.\ Hier ist vor allem wichtig, dass diese für ein $m >$ eine Konstante
-        abhängig von $\xi$ und $\varepsilon$ gilt.\ Der genaue Wert von $\gamma$ ist ebenfalls recht irrelevant, er
+        \textrm{mit a aus~\eqref{eq:def-n-a}.\ Hier ist vor allem wichtig, dass diese Aussagen für ein $m >$ eine Konstante
+        abhängig von $\xi$ und $\varepsilon$ gelten.\ Der genaue Wert von $\gamma$ ist ebenfalls recht irrelevant, er
         kann von $\varepsilon$, $\xi$ oder $m$ abhängen.}
         \newline \newline
         \textrm{Die folgenden drei Lemmata werden für den \hyperref[subsec:proof-th2]{Beweis} benötigt:}
@@ -32,9 +32,23 @@
     \subsection{Beweis des \emph{Theorem II}}
         \label{subsec:proof-th2}
         \textrm{Wie in der \hyperref[sec:th2]{Einleitung des Kapitels} erwähnt, läuft der Beweis darauf hinaus, das \hyperref
-        [subsec:lemma3]{Lemma 3} anzuwenden. Die nötige Vorarbeit wird in erster Linie mit \hyperref[subsec:lemma4]{Lemma 4} und
-        in kleinerem Maße mit \hyperref[subsec:lemma5]{Lemma 5} geleistet.}
+        [subsec:lemma3]{Lemma 3} anzuwenden.\ Die nötige Vorarbeit wird in erster Linie mit den Lemmata \hyperref
+        [subsec:lemma4]{4} und \hyperref[subsec:lemma5]{5} geleistet.}
         \begin{proofname}{\emph{\hyperref[subsec:th2]{Theorem II}}}
-            Bla bla Lemma 3 bla bla
+            Sei $R$ ein Polynom nach Definition in~\ref{subsubsec:def-poly} und seien $\varepsilon$, $\xi$, $m$ und $\enum
+            {r_1}{r_m}$ wie in~\ref{subsec:th2} beschrieben.
+            \newline
+            Zu zeigen ist, dass $\spdots{(r_1+1)}{{r_m+1}} = N$ vielen Koeffizienten von R existieren.
+            \newline 
+            Es soll gelten $\forall \ \enum{i_1}{i_m} \in \mathbb{N}$:
+            \begin{equation}
+                R_{\enum{i_1}{i_m}}(\enum{\xi}{\xi}) = 0 \label{eq:rem-poly-condition}
+            \end{equation}
+            sodass gilt:
+            \begin{equation*}
+                \sum_{1 \leq \mu \leq m} \frac{i_\mu}{r_\mu} \leq \den{2} m(1 - \varepsilon)
+            \end{equation*}
+            Da das Polynom verschwindet und~\eqref{eq:rem-poly-condition} somit trivial ist, falls $i_\mu > r_\mu$, sei
+            also $i_\mu \leq r_\mu$ ($\forall \ 1 \leq \mu \leq m$).
         \end{proofname}
     

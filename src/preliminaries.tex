@@ -1,13 +1,18 @@
 
 \section{Grundlagen und Voraussetzungen}
-    \label{sec:basics}
+    \label{sec:preliminaries}
     \textrm{In diesem Kapitel werden die nötigen Grundlagen behandelt, die für den Beweis des \emph{Satzes von Roth}
     benötigt werden. Außerdem wird die formale Aussage des Satzes dargelegt; der Beweis wird jedoch nicht in dieser
     Arbeit vollzogen.}
     
+    \subsection{Notation}
+    \label{subsec:notation}
+        \textrm{In dieser Arbeit wird $\mathbb{N}$ verwendet als natürliche Zahlen \emph{ohne} Null, wogegen $\mathbb{N}_0$
+        die natürlichen Zahlen \emph{inklusive} der Null meint.}
+    
     \subsection{algebraische Zahlen}
         \label{subsec:algebraic-numbers}
-        \textrm{Sei $z \in \mathbb{C}$. $z$ heißt \emph{algebraisch} genau dann, wenn gilt:}
+        \textrm{Eine komplexe Zahl $z \in \mathbb{C}$ heißt \emph{algebraisch} genau dann, wenn gilt:}
         \begin{equation}
             \exists f \in \mathbb{Q}[x] : f(z) = 0 \label{eq:def-algebraic}
         \end{equation}
@@ -26,8 +31,8 @@
             0 < \left| \xi - \frac{p}{q} \right| < q^{-(2+\delta)} \label{eq:svr}
         \end{equation}
         \textrm{nur endlich viele Lösungen in $p \in \mathbb{Z}$, $q \in \mathbb{N}$.
-        \newline
-        \textrm{Hiermit liefert der Satz $2$ als obere Schranke für das Irrationalitätsmaß algebraisch irrationaler
+        \newpage
+        \textrm{Hiermit liefert der Satz die obere Schranke $2$ für das Irrationalitätsmaß algebraisch irrationaler
         Zahlen; zusammen mit der unteren Schranke von ebenfalls $2$ gilt somit $\mu(x) = 2$ für alle algebraisch
         irrationalen Zahlen $x$.}
         \newline \newline
@@ -65,10 +70,10 @@
         Sei R ein Polynom nach \hyperref[subsubsec:def-poly]{obiger Definition}.\ Dann gilt:
         \begin{enumerate}
             \item \textrm{$R$ hat ausschließlich Koeffizienten in $\mathbb{Z} \Rightarrow R_{\enum{i_1}{i_m}}$ hat
-            auch ausschließlich Koeffizienten in $\mathbb{Z}$.}
+            auch ausschließlich Koeffizienten in $\mathbb{Z}$}
             \item \textrm{$R$ hat Grad $r_\mu$ in $x_\mu \Rightarrow R_{\enum{i_1}{i_m}}$ hat höchstens Grad $r_\mu
-            - i_\mu$ in $x_\mu$ und verschwindet für $r_\mu < i_\mu$. ($\forall 1 \leq \mu \leq m$)}
-            \item $\content{R_{\enum{i_1}{i_m}}} \leq 2^{\dsum{r_1}{r_m}} \content{R}$.
+            - i_\mu$ in $x_\mu$ und verschwindet für $r_\mu < i_\mu$ ($\forall \  1 \leq \mu \leq m$)}
+            \item $\content{R_{\enum{i_1}{i_m}}} \leq 2^{\dsum{r_1}{r_m}} \content{R}$
         \end{enumerate}
         \textrm{Diese Aussagen sind recht trivial, daher wird hier auf einen ausführlichen Beweis
         verzichtet und dem*der Leser*in überlassen.}

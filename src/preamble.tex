@@ -5,6 +5,7 @@
 \usepackage{mathtools}
 \usepackage{hyperref}
 \usepackage{amssymb}
+\usepackage[tikz]{mdframed}
 
 \setlength{\parindent}{0pt}
 
@@ -18,10 +19,19 @@
 \newcommand{\den}[1]{\frac{1}{#1}}
 \newcommand{\cbrt}[1]{\sqrt[3]{#1}}
 
+\newmdenv[
+    linewidth=0pt,
+    leftmargin=17pt,
+    skipabove=0pt,
+    skipbelow=-8pt
+]{indentpar}
+
 \newenvironment{proof}
     {\newline \emph{Beweis}. \newline}
     {\hfill $Q.e.d.$}
 \newenvironment{proofname}[1]
     {\newline \emph{Beweis}(#1): \newline}
     {\hfill $Q.e.d.$}
+
+
     

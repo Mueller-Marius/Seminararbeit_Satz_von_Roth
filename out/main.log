@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.7) (preloaded format=pdflatex 2021.12.14)  18 AUG 2022 20:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.7) (preloaded format=pdflatex 2021.12.14)  19 AUG 2022 23:36
 entering extended mode
 **./main.tex
 (main.tex
@@ -299,13 +299,503 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 (/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfo
 nts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-))
+)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/mdfra
+med/mdframed.sty
+Package: mdframed 2013/07/01 1.9b: mdframed
+
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3pac
+kages/xparse/xparse.sty
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3ker
+nel/expl3.sty
+Package: expl3 2021-11-22 L3 programming layer (loader) 
+
 (/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3bac
 kend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count283
 \l__pdf_internal_box=\box53
+))
+Package: xparse 2021-11-12 L3 Experimental document command parser
 )
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/etool
+box/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count284
+)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/zref/
+zref-abspage.sty
+Package: zref-abspage 2022-04-07 v2.34 Module abspage for zref (HO)
+
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/zref/
+zref-base.sty
+Package: zref-base 2022-04-07 v2.34 Module base for zref (HO)
+Package zref Info: New property list: main on input line 767.
+Package zref Info: New property: default on input line 768.
+Package zref Info: New property: page on input line 769.
+)
+\c@abspage=\count285
+Package zref Info: New property: abspage on input line 65.
+)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/needs
+pace/needspace.sty
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graph
+ics/color.sty
+Package: color 2021/10/11 v1.3b Standard LaTeX Color (DPC)
+
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graph
+ics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graph
+ics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\mdf@templength=\skip57
+\c@mdf@globalstyle@cnt=\count286
+\mdf@skipabove@length=\skip58
+\mdf@skipbelow@length=\skip59
+\mdf@leftmargin@length=\skip60
+\mdf@rightmargin@length=\skip61
+\mdf@innerleftmargin@length=\skip62
+\mdf@innerrightmargin@length=\skip63
+\mdf@innertopmargin@length=\skip64
+\mdf@innerbottommargin@length=\skip65
+\mdf@splittopskip@length=\skip66
+\mdf@splitbottomskip@length=\skip67
+\mdf@outermargin@length=\skip68
+\mdf@innermargin@length=\skip69
+\mdf@linewidth@length=\skip70
+\mdf@innerlinewidth@length=\skip71
+\mdf@middlelinewidth@length=\skip72
+\mdf@outerlinewidth@length=\skip73
+\mdf@roundcorner@length=\skip74
+\mdf@footenotedistance@length=\skip75
+\mdf@userdefinedwidth@length=\skip76
+\mdf@needspace@length=\skip77
+\mdf@frametitleaboveskip@length=\skip78
+\mdf@frametitlebelowskip@length=\skip79
+\mdf@frametitlerulewidth@length=\skip80
+\mdf@frametitleleftmargin@length=\skip81
+\mdf@frametitlerightmargin@length=\skip82
+\mdf@shadowsize@length=\skip83
+\mdf@extratopheight@length=\skip84
+\mdf@subtitleabovelinewidth@length=\skip85
+\mdf@subtitlebelowlinewidth@length=\skip86
+\mdf@subtitleaboveskip@length=\skip87
+\mdf@subtitlebelowskip@length=\skip88
+\mdf@subtitleinneraboveskip@length=\skip89
+\mdf@subtitleinnerbelowskip@length=\skip90
+\mdf@subsubtitleabovelinewidth@length=\skip91
+\mdf@subsubtitlebelowlinewidth@length=\skip92
+\mdf@subsubtitleaboveskip@length=\skip93
+\mdf@subsubtitlebelowskip@length=\skip94
+\mdf@subsubtitleinneraboveskip@length=\skip95
+\mdf@subsubtitleinnerbelowskip@length=\skip96
+
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/f
+rontendlayer/tikz.sty
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/b
+asiclayer/pgf.sty
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/u
+tilities/pgfrcs.sty
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks22
+\pgfutil@tempdima=\dimen162
+\pgfutil@tempdimb=\dimen163
+
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/utilities/pgfutil-common-lists.tex))
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/utilities/pgfutil-latex.def
+\pgfutil@abb=\box54
+)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/utilities/pgfrcs.code.tex
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/pgf.revision.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+))
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/b
+asiclayer/pgfcore.sty
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graph
+ics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graph
+ics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graph
+ics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graph
+ics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+)
+\Gin@req@height=\dimen164
+\Gin@req@width=\dimen165
+)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/s
+ystemlayer/pgfsys.sty
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/systemlayer/pgfsys.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks23
+\pgfkeys@temptoks=\toks24
+
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks25
+))
+\pgf@x=\dimen166
+\pgf@y=\dimen167
+\pgf@xa=\dimen168
+\pgf@ya=\dimen169
+\pgf@xb=\dimen170
+\pgf@yb=\dimen171
+\pgf@xc=\dimen172
+\pgf@yc=\dimen173
+\pgf@xd=\dimen174
+\pgf@yd=\dimen175
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count287
+\c@pgf@countb=\count288
+\c@pgf@countc=\count289
+\c@pgf@countd=\count290
+\t@pgf@toka=\toks26
+\t@pgf@tokb=\toks27
+\t@pgf@tokc=\toks28
+\pgf@sys@id@count=\count291
+
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/systemlayer/pgf.cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
+
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count292
+\pgfsyssoftpath@bigbuffer@items=\count293
+)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolo
+r/xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graph
+ics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+LaTeX Info: Redefining \color on input line 711.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/basiclayer/pgfcore.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/math/pgfmath.code.tex
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/math/pgfmathcalc.code.tex
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/math/pgfmathutil.code.tex)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen176
+\pgfmath@count=\count294
+\pgfmath@box=\box55
+\pgfmath@toks=\toks29
+\pgfmath@stack@operand=\toks30
+\pgfmath@stack@operation=\toks31
+)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/math/pgfmathfunctions.code.tex
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/math/pgfmathfunctions.basic.code.tex)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/math/pgfmathfunctions.trigonometric.code.tex)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/math/pgfmathfunctions.random.code.tex)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/math/pgfmathfunctions.comparison.code.tex)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/math/pgfmathfunctions.base.code.tex)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/math/pgfmathfunctions.round.code.tex)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/math/pgfmathfunctions.misc.code.tex)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/math/pgfmathfunctions.integerarithmetics.code.tex)))
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count295
+))
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/math/pgfint.code.tex)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen177
+\pgf@picmaxx=\dimen178
+\pgf@picminy=\dimen179
+\pgf@picmaxy=\dimen180
+\pgf@pathminx=\dimen181
+\pgf@pathmaxx=\dimen182
+\pgf@pathminy=\dimen183
+\pgf@pathmaxy=\dimen184
+\pgf@xx=\dimen185
+\pgf@xy=\dimen186
+\pgf@yx=\dimen187
+\pgf@yy=\dimen188
+\pgf@zx=\dimen189
+\pgf@zy=\dimen190
+)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen191
+\pgf@path@lasty=\dimen192
+)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen193
+\pgf@shorten@start@additional=\dimen194
+)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box56
+\pgf@hbox=\box57
+\pgf@layerbox@main=\box58
+\pgf@picture@serial@count=\count296
+)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen195
+)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen196
+\pgf@pt@y=\dimen197
+\pgf@pt@temp=\dimen198
+)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen199
+)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen256
+\pgf@sys@shading@range@num=\count297
+\pgf@shadingcount=\count298
+)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box59
+))
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box60
+)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/c
+ompatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen257
+\pgf@nodesepend=\dimen258
+)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/c
+ompatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+))
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/u
+tilities/pgffor.sty
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/u
+tilities/pgfkeys.sty
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/utilities/pgfkeys.code.tex))
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/m
+ath/pgfmath.sty
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/math/pgfmath.code.tex))
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/utilities/pgffor.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/math/pgfmath.code.tex)
+\pgffor@iter=\dimen259
+\pgffor@skip=\dimen260
+\pgffor@stack=\toks32
+\pgffor@toks=\toks33
+))
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count299
+\pgfplotmarksize=\dimen261
+)
+\tikz@lastx=\dimen262
+\tikz@lasty=\dimen263
+\tikz@lastxsaved=\dimen264
+\tikz@lastysaved=\dimen265
+\tikz@lastmovetox=\dimen266
+\tikz@lastmovetoy=\dimen267
+\tikzleveldistance=\dimen268
+\tikzsiblingdistance=\dimen269
+\tikz@figbox=\box61
+\tikz@figbox@bg=\box62
+\tikz@tempbox=\box63
+\tikz@tempbox@bg=\box64
+\tikztreelevel=\count300
+\tikznumberofchildren=\count301
+\tikznumberofcurrentchild=\count302
+\tikz@fig@count=\count303
+
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count304
+\pgfmatrixcurrentcolumn=\count305
+\pgf@matrix@numberofcolumns=\count306
+)
+\tikz@expandcount=\count307
+
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf
+/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/mdfra
+med/md-frame-1.mdf
+File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
+)
+\mdf@frametitlebox=\box65
+\mdf@footnotebox=\box66
+\mdf@splitbox@one=\box67
+\mdf@splitbox@two=\box68
+\mdf@splitbox@save=\box69
+\mdfsplitboxwidth=\skip97
+\mdfsplitboxtotalwidth=\skip98
+\mdfsplitboxheight=\skip99
+\mdfsplitboxdepth=\skip100
+\mdfsplitboxtotalheight=\skip101
+\mdfframetitleboxwidth=\skip102
+\mdfframetitleboxtotalwidth=\skip103
+\mdfframetitleboxheight=\skip104
+\mdfframetitleboxdepth=\skip105
+\mdfframetitleboxtotalheight=\skip106
+\mdffootnoteboxwidth=\skip107
+\mdffootnoteboxtotalwidth=\skip108
+\mdffootnoteboxheight=\skip109
+\mdffootnoteboxdepth=\skip110
+\mdffootnoteboxtotalheight=\skip111
+\mdftotallinewidth=\skip112
+\mdfboundingboxwidth=\skip113
+\mdfboundingboxtotalwidth=\skip114
+\mdfboundingboxheight=\skip115
+\mdfboundingboxdepth=\skip116
+\mdfboundingboxtotalheight=\skip117
+\mdf@freevspace@length=\skip118
+\mdf@horizontalwidthofbox@length=\skip119
+\mdf@verticalmarginwhole@length=\skip120
+\mdf@horizontalspaceofbox=\skip121
+\mdfsubtitleheight=\skip122
+\mdfsubsubtitleheight=\skip123
+\c@mdfcountframes=\count308
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- success******
+
+\mdf@envdepth=\count309
+\c@mdf@env@i=\count310
+\c@mdf@env@ii=\count311
+\c@mdf@zref@counter=\count312
+Package zref Info: New property: mdf@pagevalue on input line 895.
+))
 (/Users/gurki/IdeaProjects/Seminararbeit Satz von Roth/out/main.aux)
 \openout1 = `main.aux'.
 
@@ -327,57 +817,6 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
-
-(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graph
-ics/graphicx.sty
-Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graph
-ics/graphics.sty
-Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
-
-(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graph
-ics/trig.sty
-Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-)
-(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graph
-ics-cfg/graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 107.
-
-(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graph
-ics-def/pdftex.def
-File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
-
-(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/context/bas
-e/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count284
-\scratchdimen=\dimen162
-\scratchbox=\box54
-\nofMPsegments=\count285
-\nofMParguments=\count286
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count287
-\MPscratchDim=\dimen163
-\MPnumerator=\count288
-\makeMPintoPDFobject=\count289
-\everyMPtoPDFconversion=\toks23
-)))
-(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/epsto
-pdf-pkg/epstopdf-base.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/00mik
-tex/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
-))
-\Gin@req@height=\dimen164
-\Gin@req@width=\dimen165
-)
 Package hyperref Info: Link coloring OFF on input line 14.
 
 (/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyper
@@ -392,7 +831,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 titlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count290
+\c@section@level=\count313
 )
 LaTeX Info: Redefining \ref on input line 14.
 LaTeX Info: Redefining \pageref on input line 14.
@@ -400,9 +839,35 @@ LaTeX Info: Redefining \nameref on input line 14.
 
 (/Users/gurki/IdeaProjects/Seminararbeit Satz von Roth/out/main.out)
 (/Users/gurki/IdeaProjects/Seminararbeit Satz von Roth/out/main.out)
-\@outlinefile=\write3
-\openout3 = `main.out'.
+\@outlinefile=\write4
+\openout4 = `main.out'.
 
+
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/context/bas
+e/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count314
+\scratchdimen=\dimen270
+\scratchbox=\box70
+\nofMPsegments=\count315
+\nofMParguments=\count316
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count317
+\MPscratchDim=\dimen271
+\MPnumerator=\count318
+\makeMPintoPDFobject=\count319
+\everyMPtoPDFconversion=\toks35
+)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/epsto
+pdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/00mik
+tex/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
 LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
 
 
@@ -426,8 +891,8 @@ t algebraisch
 
 {/Users/gurki/Library/Application Support/MiKTeX/texmfs/data/pdftex/config/pdft
 ex.map}] (/Users/gurki/IdeaProjects/Seminararbeit Satz von Roth/out/main.toc)
-\tf@toc=\write4
-\openout4 = `main.toc'.
+\tf@toc=\write5
+\openout5 = `main.toc'.
 
 [2] (motivation-topic.tex
 Overfull \hbox (4.22864pt too wide) in paragraph at lines 5--6
@@ -441,47 +906,53 @@ Overfull \hbox (1.84099pt too wide) in paragraph at lines 29--30
  $ \OT1/cmr/m/n/10.95 ist bisher unbekannt. Der neuste
  []
 
-[3]) (preliminaries.tex
-Underfull \hbox (badness 10000) in paragraph at lines 27--35
+
+Overfull \hbox (8.77206pt too wide) in paragraph at lines 39--40
+\OT1/cmr/m/n/10.95 Es stellt sich nach den oben genannten Beispielen die Frage,
+ ob alle irrationalen
+ []
+
+[3]) (preliminaries.tex [4]
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
-[4] (polynomials.tex
+(polynomials.tex
 Underfull \hbox (badness 10000) in paragraph at lines 14--21
 
  []
 
-
+[5]
 Overfull \hbox (1.28662pt too wide) in paragraph at lines 32--34
 \OT1/cmr/m/n/10.95 Sei R ein Polynom nach []obiger Definition[]. Dann sei der \
 OT1/cmr/m/it/10.95 Inhalt \OT1/cmr/m/n/10.95 eines Polynoms
  []
 
-[5]
+
 Overfull \hbox (19.47348pt too wide) in paragraph at lines 57--67
 \OT1/cmr/m/n/10.95 Dies erinnert an die \OT1/cmr/m/it/10.95 Nullstellenordnung 
 \OT1/cmr/m/n/10.95 einer Funktion (beispielsweise Nullstellen
  []
 
-)
-Overfull \hbox (10.21683pt too wide) in paragraph at lines 68--69
+) [6]
+Overfull \hbox (10.21683pt too wide) in paragraph at lines 73--74
 []$\OML/cmm/m/it/10.95 R$ \OT1/cmr/m/n/10.95 hat ausschlielich Koeffizienten i
 n $\U/msb/m/n/10.95 Z \OMS/cmsy/m/n/10.95 ) \OML/cmm/m/it/10.95 R[]$ \OT1/cmr/m
 /n/10.95 hat auch ausschlielich
  []
 
-preliminaries.tex:71: Missing $ inserted.
+preliminaries.tex:76: Missing $ inserted.
 <inserted text> 
                 $
-l.71 ...      \item $\content{R_{\enum{i_1}{i_m}}}
+l.76 ...      \item $\content{R_{\enum{i_1}{i_m}}}
                                                    \leq 2^{\dsum{r_1}{r_m}} ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-preliminaries.tex:71: Extra }, or forgotten $.
+preliminaries.tex:76: Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.71 ...      \item $\content{R_{\enum{i_1}{i_m}}}
+l.76 ...      \item $\content{R_{\enum{i_1}{i_m}}}
                                                    \leq 2^{\dsum{r_1}{r_m}} ...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -489,18 +960,18 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-preliminaries.tex:71: Missing $ inserted.
+preliminaries.tex:76: Missing $ inserted.
 <inserted text> 
                 $
-l.71 ...      \item $\content{R_{\enum{i_1}{i_m}}}
+l.76 ...      \item $\content{R_{\enum{i_1}{i_m}}}
                                                    \leq 2^{\dsum{r_1}{r_m}} ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-preliminaries.tex:71: Missing } inserted.
+preliminaries.tex:76: Missing } inserted.
 <inserted text> 
                 }
-l.71 ...      \item $\content{R_{\enum{i_1}{i_m}}}
+l.76 ...      \item $\content{R_{\enum{i_1}{i_m}}}
                                                    \leq 2^{\dsum{r_1}{r_m}} ...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -508,24 +979,24 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[6]) (theorem-ii.tex
+) (theorem-ii.tex [7]
 Underfull \hbox (badness 10000) in paragraph at lines 26--29
 
  []
 
-(lemmas3-5.tex [7]) [8]) [9]
+(lemmas3-5.tex [8])) [9] [10]
 (/Users/gurki/IdeaProjects/Seminararbeit Satz von Roth/out/main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: AED28971190D1142E7545B9EB8C01004;3531.
+(rerunfilecheck)             Checksum: BD8AA7A03BA40F697254B2C181112F73;3675.
  ) 
 Here is how much of TeX's memory you used:
- 10132 strings out of 480616
- 163070 string characters out of 2896114
- 452983 words of memory out of 3000000
- 27803 multiletter control sequences out of 15000+600000
+ 21947 strings out of 480616
+ 421686 string characters out of 2896114
+ 689237 words of memory out of 3000000
+ 39368 multiletter control sequences out of 15000+600000
  413560 words of font info for 63 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
- 65i,10n,71p,318b,385s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 129i,10n,135p,469b,969s stack positions out of 5000i,500n,10000p,200000b,80000s
  </Users/gurki/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour
 /jknappen/ec/dpi600/tcrm1095.pk></Users/gurki/Library/Application Support/MiKTe
 X/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/gurki/Librar
@@ -552,9 +1023,9 @@ eX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb></Users/gurki/Libra
 ry/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/symbol
 s/msbm10.pfb>
 Output written on "/Users/gurki/IdeaProjects/Seminararbeit Satz von Roth/out/ma
-in.pdf" (9 pages, 266458 bytes).
+in.pdf" (10 pages, 271965 bytes).
 PDF statistics:
- 297 PDF objects out of 1000 (max. 8388607)
- 51 named destinations out of 1000 (max. 500000)
- 177 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 314 PDF objects out of 1000 (max. 8388607)
+ 54 named destinations out of 1000 (max. 500000)
+ 197 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -32,7 +32,23 @@
         \left| a_{a,l} \right| \leq (a + 1)^l
     \end{equation*}
     \begin{proof}
-        bla
+        \textrm{Für $l < n$ ist die Aussage offensichtlich. Für $l \geq n$ wird eine kurze Induktion aufgezogen:}
+        \newpage
+        Induktionsanfang: $l = n$
+        \begin{indentpar}
+            Folgt durch Umformung aus $f(x) = 0$ aus~\ref{subsec:algebraic-numbers}.
+        \end{indentpar}
+        Induktionsvoraussetzung:
+        \begin{indentpar}
+            \textrm{Angenommen, die Behauptung gilt für ein $l > n$.}
+        \end{indentpar}
+        Induktionsschritt: $l \Rightarrow l+1$
+        \begin{indentpar}
+            Folgt mit Hilfe von
+            \begin{equation*}
+                \xi^{l+1} = \xi \cdot \xi^l = \dsum{a_{n-1, l}\xi^{n}}{a_{0,l} \xi}
+            \end{equation*}
+        \end{indentpar}
     \end{proof}
 
 \subsection{Lemma 5}
