@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.7) (preloaded format=pdflatex 2021.12.14)  19 AUG 2022 23:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.7) (preloaded format=pdflatex 2021.12.14)  22 AUG 2022 20:43
 entering extended mode
 **./main.tex
 (main.tex
@@ -795,6 +795,13 @@ File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
 \c@mdf@env@ii=\count311
 \c@mdf@zref@counter=\count312
 Package zref Info: New property: mdf@pagevalue on input line 895.
+)
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/wasys
+ym/wasysym.sty
+Package: wasysym 2020/01/19 v2.4 Wasy-2 symbol support package
+\symwasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 93.
 ))
 (/Users/gurki/IdeaProjects/Seminararbeit Satz von Roth/out/main.aux)
 \openout1 = `main.aux'.
@@ -882,19 +889,22 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
 nts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (2.19511pt too wide) in paragraph at lines 25--26
-\OT1/cmr/m/n/10 des Irrationalitatsmaes eine Aussage uber die Irrationalita
-t algebraisch
- []
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 17
+.
 
-[1
+(/Users/gurki/Library/Application Support/MiKTeX/texmfs/install/tex/latex/wasys
+ym/uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+) [1
 
 {/Users/gurki/Library/Application Support/MiKTeX/texmfs/data/pdftex/config/pdft
-ex.map}] (/Users/gurki/IdeaProjects/Seminararbeit Satz von Roth/out/main.toc)
+ex.map}]
+(/Users/gurki/IdeaProjects/Seminararbeit Satz von Roth/out/main.toc)
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
-[2] (motivation-topic.tex
+ [2]
+(motivation-topic.tex
 Overfull \hbox (4.22864pt too wide) in paragraph at lines 5--6
 \OT1/cmr/m/n/10.95 Das sogenannte \OT1/cmr/m/it/10.95 Irrationalitatsma \OT1/
 cmr/m/n/10.95 quantifiziert die Irrationalitat einer reellen
@@ -913,7 +923,7 @@ Overfull \hbox (8.77206pt too wide) in paragraph at lines 39--40
  []
 
 [3]) (preliminaries.tex [4]
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
 
@@ -935,24 +945,24 @@ Overfull \hbox (19.47348pt too wide) in paragraph at lines 57--67
  []
 
 ) [6]
-Overfull \hbox (10.21683pt too wide) in paragraph at lines 73--74
+Overfull \hbox (10.21683pt too wide) in paragraph at lines 74--75
 []$\OML/cmm/m/it/10.95 R$ \OT1/cmr/m/n/10.95 hat ausschlielich Koeffizienten i
 n $\U/msb/m/n/10.95 Z \OMS/cmsy/m/n/10.95 ) \OML/cmm/m/it/10.95 R[]$ \OT1/cmr/m
 /n/10.95 hat auch ausschlielich
  []
 
-preliminaries.tex:76: Missing $ inserted.
+preliminaries.tex:77: Missing $ inserted.
 <inserted text> 
                 $
-l.76 ...      \item $\content{R_{\enum{i_1}{i_m}}}
+l.77 ...      \item $\content{R_{\enum{i_1}{i_m}}}
                                                    \leq 2^{\dsum{r_1}{r_m}} ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-preliminaries.tex:76: Extra }, or forgotten $.
+preliminaries.tex:77: Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.76 ...      \item $\content{R_{\enum{i_1}{i_m}}}
+l.77 ...      \item $\content{R_{\enum{i_1}{i_m}}}
                                                    \leq 2^{\dsum{r_1}{r_m}} ...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -960,18 +970,18 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-preliminaries.tex:76: Missing $ inserted.
+preliminaries.tex:77: Missing $ inserted.
 <inserted text> 
                 $
-l.76 ...      \item $\content{R_{\enum{i_1}{i_m}}}
+l.77 ...      \item $\content{R_{\enum{i_1}{i_m}}}
                                                    \leq 2^{\dsum{r_1}{r_m}} ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-preliminaries.tex:76: Missing } inserted.
+preliminaries.tex:77: Missing } inserted.
 <inserted text> 
                 }
-l.76 ...      \item $\content{R_{\enum{i_1}{i_m}}}
+l.77 ...      \item $\content{R_{\enum{i_1}{i_m}}}
                                                    \leq 2^{\dsum{r_1}{r_m}} ...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -984,48 +994,60 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--29
 
  []
 
-(lemmas3-5.tex [8])) [9] [10]
-(/Users/gurki/IdeaProjects/Seminararbeit Satz von Roth/out/main.aux)
+(lemmas3-5.tex [8]
+
+LaTeX Font Warning: Font shape `U/wasy/bx/n' in size <10.95> not available
+(Font)              Font shape `U/wasy/b/n' tried instead on input line 66.
+
+)
+Overfull \hbox (3.99199pt too wide) in paragraph at lines 36--44
+\OT1/cmr/m/n/10.95 Sei $\OML/cmm/m/it/10.95 R$ \OT1/cmr/m/n/10.95 ein Polynom n
+ach Definition in []3.5.1[] und seien $\OML/cmm/m/it/10.95 ";  ;  n;  m [] r[]
+; [] ; r[]$
+ []
+
+[9]) [10] (/Users/gurki/IdeaProjects/Seminararbeit Satz von Roth/out/main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: BD8AA7A03BA40F697254B2C181112F73;3675.
+(rerunfilecheck)             Checksum: 44BBEF2C770C69B445D13FD33676BA3D;3832.
  ) 
 Here is how much of TeX's memory you used:
- 21947 strings out of 480616
- 421686 string characters out of 2896114
- 689237 words of memory out of 3000000
- 39368 multiletter control sequences out of 15000+600000
- 413560 words of font info for 63 fonts, out of 8000000 for 9000
+ 22182 strings out of 480616
+ 424574 string characters out of 2896114
+ 690875 words of memory out of 3000000
+ 39592 multiletter control sequences out of 15000+600000
+ 414656 words of font info for 68 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
- 129i,10n,135p,469b,969s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 129i,10n,135p,489b,969s stack positions out of 5000i,500n,10000p,200000b,80000s
  </Users/gurki/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour
-/jknappen/ec/dpi600/tcrm1095.pk></Users/gurki/Library/Application Support/MiKTe
-X/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/gurki/Librar
-y/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx
-12.pfb></Users/gurki/Library/Application Support/MiKTeX/texmfs/install/fonts/ty
-pe1/public/amsfonts/cm/cmbxti10.pfb></Users/gurki/Library/Application Support/M
-iKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></Users/gurki/Li
-brary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/
-cmmi10.pfb></Users/gurki/Library/Application Support/MiKTeX/texmfs/install/font
-s/type1/public/amsfonts/cm/cmmi6.pfb></Users/gurki/Library/Application Support/
-MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Users/gurki/Li
-brary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/
-cmr10.pfb></Users/gurki/Library/Application Support/MiKTeX/texmfs/install/fonts
-/type1/public/amsfonts/cm/cmr12.pfb></Users/gurki/Library/Application Support/M
-iKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></Users/gurki/Lib
+/public/wasy/dpi657/wasyb10.pk> </Users/gurki/Library/Application Support/MiKTe
+X/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk></Users/gurki/Libr
+ary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cm
+bx10.pfb></Users/gurki/Library/Application Support/MiKTeX/texmfs/install/fonts/
+type1/public/amsfonts/cm/cmbx12.pfb></Users/gurki/Library/Application Support/M
+iKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></Users/gurki/
+Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/c
+m/cmex10.pfb></Users/gurki/Library/Application Support/MiKTeX/texmfs/install/fo
+nts/type1/public/amsfonts/cm/cmmi10.pfb></Users/gurki/Library/Application Suppo
+rt/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></Users/gurki
+/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/
+cm/cmmi8.pfb></Users/gurki/Library/Application Support/MiKTeX/texmfs/install/fo
+nts/type1/public/amsfonts/cm/cmr10.pfb></Users/gurki/Library/Application Suppor
+t/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/gurki/
+Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/c
+m/cmr17.pfb></Users/gurki/Library/Application Support/MiKTeX/texmfs/install/fon
+ts/type1/public/amsfonts/cm/cmr6.pfb></Users/gurki/Library/Application Support/
+MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></Users/gurki/Lib
 rary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/c
-mr6.pfb></Users/gurki/Library/Application Support/MiKTeX/texmfs/install/fonts/t
-ype1/public/amsfonts/cm/cmr8.pfb></Users/gurki/Library/Application Support/MiKT
-eX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/gurki/Libra
-ry/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cms
-y6.pfb></Users/gurki/Library/Application Support/MiKTeX/texmfs/install/fonts/ty
-pe1/public/amsfonts/cm/cmsy8.pfb></Users/gurki/Library/Application Support/MiKT
-eX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb></Users/gurki/Libra
-ry/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/symbol
-s/msbm10.pfb>
+msy10.pfb></Users/gurki/Library/Application Support/MiKTeX/texmfs/install/fonts
+/type1/public/amsfonts/cm/cmsy6.pfb></Users/gurki/Library/Application Support/M
+iKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></Users/gurki/Lib
+rary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/c
+mti10.pfb></Users/gurki/Library/Application Support/MiKTeX/texmfs/install/fonts
+/type1/public/amsfonts/symbols/msbm10.pfb>
 Output written on "/Users/gurki/IdeaProjects/Seminararbeit Satz von Roth/out/ma
-in.pdf" (10 pages, 271965 bytes).
+in.pdf" (10 pages, 272892 bytes).
 PDF statistics:
- 314 PDF objects out of 1000 (max. 8388607)
+ 318 PDF objects out of 1000 (max. 8388607)
  54 named destinations out of 1000 (max. 500000)
  197 words of extra memory for PDF output out of 10000 (max. 10000000)
 

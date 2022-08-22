@@ -6,6 +6,8 @@
 \usepackage{hyperref}
 \usepackage{amssymb}
 \usepackage[tikz]{mdframed}
+\usepackage{wasysym}
+\usepackage{color}
 
 \setlength{\parindent}{0pt}
 
@@ -18,6 +20,7 @@
 \newcommand{\sptext}[1]{\ \textrm{#1}\ }
 \newcommand{\den}[1]{\frac{1}{#1}}
 \newcommand{\cbrt}[1]{\sqrt[3]{#1}}
+\newcommand{\shine}{\rotatebox{90}{\textcolor{cyan}{\textbf{\hexagon}}}}
 
 \newmdenv[
     linewidth=0pt,
@@ -29,9 +32,12 @@
 \newenvironment{proof}
     {\newline \emph{Beweis}. \newline}
     {\hfill $Q.e.d.$}
-\newenvironment{proofname}[1]
+\newenvironment{namedproof}[1]
     {\newline \emph{Beweis}(#1): \newline}
     {\hfill $Q.e.d.$}
+\newenvironment{shinyproof}
+    {\newline \emph{Beweis.} \newline}
+    {\hfill \shine}
 
 
     

@@ -1,9 +1,8 @@
 
 \section{Grundlagen und Voraussetzungen}
     \label{sec:preliminaries}
-    \textrm{In diesem Kapitel werden die nötigen Grundlagen behandelt, die für den Beweis des \emph{Satzes von Roth}
-    benötigt werden. Außerdem wird die formale Aussage des Satzes dargelegt; der Beweis wird jedoch nicht in dieser
-    Arbeit vollzogen.}
+    \textrm{In diesem Kapitel werden die Grundlagen behandelt, die für den Beweis des \emph{Satzes von Roth} benötigt
+    werden. Außerdem wird die formale Aussage des Satzes dargelegt; der Beweis wird jedoch nicht in dieser Arbeit vollzogen.}
     
     \subsection{Notation}
     \label{subsec:notation}
@@ -16,15 +15,17 @@
         \begin{equation}
             \exists f \in \mathbb{Q}[x] : f(z) = 0 \label{eq:def-algebraic}
         \end{equation}
-        \textrm{d.h.\ falls z eine Lösung eines Polynoms mit rationalen Koeffizienten ist.\ Sei $n = \deg f$. OBdA kann
-        angenommen werden, dass $f \in \mathbb{Z}[x]$, da sich die Gleichung $f(x) = 0$ mit dem Produkt der Nenner der
-        Koeffizienten der Form $a_k = \frac{p_k}{q_k} \ (\forall \  1 \leq k \leq n)$, d.h.\ mit $\prod_{k=1}^n q_k$
-        multiplizieren lässt, wodurch alle Koeffizienten ganzzahlig werden, die Gleichung und damit auch das
-        resultierende Polynom jedoch dieselben Lösungen bzw.\ Nullstellen besitzen.
+        \textrm{d.h.\ falls z eine Lösung eines Polynoms mit rationalen Koeffizienten $a_k~=~\frac{p_k}{q_k}$ mit $p_k \in
+        \mathbb{Z},\ q_k \in \mathbb{N}\ (\forall \ 1 \leq k \leq n)$ ist.
         \newline
+        Die Zahl $n = \deg f$ heißt \emph{Grad} der algebraischen Zahl $z$.
+        \newline
+        OBdA kann angenommen werden, dass $f \in \mathbb{Z}[x]$, da sich die
+        Gleichung $f(x) = 0$ mit dem Produkt der Nenner der Koeffizienten multiplizieren lässt, wodurch alle Koeffizienten ganzzahlig werden,
+        die Gleichung und damit auch das resultierende Polynom jedoch dieselben Lösungen bzw.\ Nullstellen besitzen.\
         Weiterhin lässt sich oBdA annehmen, dass für den Koeffizienten der höchsten Potenz von $x$ gilt: $a_n \neq 0$.}
     
-    \subsection{Satz von Roth (\emph{Theorem I})}
+    \subsection{Der Satz von Roth (\emph{Theorem I})}
         \label{subsec:th1}
         Sei $\xi \in \mathbb{R}$ algebraisch irrational und $\delta > 0$ beliebig.\ Dann besitzt die Ungleichung
         \begin{equation}
@@ -38,7 +39,7 @@
         \newline \newline
         Zunächst wird gezeigt, dass der Satz nur für $a_n = 1$ aus~\ref{subsec:algebraic-numbers} zu zeigen ist.}
     
-    \subsection{Normieren des Polynoms}
+    \subsection{Normieren des Polynoms einer algebraischen Zahl}
         \label{subsec:norm-poly}
         \textrm{Angenommen, der \hyperref[eq:svr]{\emph{Satz von Roth}} gelte.\ Dann folgt aus $f(\xi) = 0$ aus~\ref
         {subsec:algebraic-numbers} durch Multiplikation mit $a_n^{n-1}$ für $a_n \xi \coloneq \Xi$:}
@@ -56,12 +57,12 @@
             \in \mathbb{Z}. \label{eq:prereq}
         \end{equation}
         \newline
-        \textrm{Seien im Übrigen}
+        \textrm{Sei im Übrigen}
         \begin{equation}
-            n = \deg(f) \sptext{und} a = \max\{ 1, \enum{|a_{n-1}|}{|a_0|} \}. \label{eq:def-n-a}
+            a = \max\{ 1, \enum{|a_{n-1}|}{|a_0|} \}. \label{eq:def-a}
         \end{equation}
         \newline
-        Diese werden im weiteren Verlauf der Arbeit und des Beweises verwendet.
+        Dies wird im weiteren Verlauf der Arbeit und des Beweises verwendet.
     
     \input{polynomials.tex}
     

@@ -22,12 +22,12 @@
 
 \subsection{Lemma 4}
     \label{subsec:lemma4}
-    \textrm{Sei $\xi$ algebraisch irrational. Für alle $l \in \mathbb{N}_0$ existieren $a_{j,l} \in \mathbb{Z}$ mit $1
-    \leq j < n$, sodass gilt:}
+    \textrm{Sei $\xi$ algebraisch irrational und $n$ dessen Grad. Für alle $l \in \mathbb{N}_0$ existieren
+    Koeffizienten $a_{j,l} \in \mathbb{Z}$ mit $1 \leq j < n$, sodass gilt:}
     \begin{equation*}
         \xi^l = \dsum{a_{n-1, l}\xi^{n-1}}{a_{0,l}}
     \end{equation*}
-    und mit $a$ aus~\eqref{eq:def-n-a} gilt:
+    \textrm{und sind mit $a$ aus~\eqref{eq:def-a} folgendermaßen nach oben beschränkt:}
     \begin{equation*}
         \left| a_{a,l} \right| \leq (a + 1)^l
     \end{equation*}
@@ -46,9 +46,10 @@
         \begin{indentpar}
             Folgt mit Hilfe von
             \begin{equation*}
-                \xi^{l+1} = \xi \cdot \xi^l = \dsum{a_{n-1, l}\xi^{n}}{a_{0,l} \xi}
+                \xi^{l+1} = \xi \cdot \xi^l = \dsum{a_{n-1, l}\xi^{n}}{a_{0,l} \xi}.
             \end{equation*}
         \end{indentpar}
+        \textrm{Somit gilt die Aussage für alle $l \in \mathbb{N}$.}
     \end{proof}
 
 \subsection{Lemma 5}
@@ -57,11 +58,11 @@
     \begin{equation*}
         \frac{\sqrt{2m}}{\lambda} \spdots{(r_1 + 1)}{(r_m +1)}
     \end{equation*}
-    \textrm{viele $m$-Tupel $(\enum{i_1}{i_m})$, die folgende Ungleichung erfüllen:}
+    \textrm{viele $m$-Tupel $(\enum{i_1}{i_m})$, die die folgende Ungleichung erfüllen:}
     \begin{equation*}
         \sum_{\substack{0 \leq i_\mu \leq r_\mu \\ 1 \leq \mu \leq m}} \frac{i_\mu}{r_\mu} \leq \den{2} (m - \lambda)
     \end{equation*}
     \begin{proof}
-        bla
+        bla \shine
     \end{proof}
     

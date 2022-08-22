@@ -8,11 +8,11 @@
     
     \subsection{Aussage des \emph{Theorem II}}
         \label{subsec:th2}
-        Sei $\varepsilon > 0$ beliebig, $\xi$ algebraisch irrational, sei
+        Sei $\varepsilon > 0$ beliebig, $\xi$ algebraisch irrational, $n$ der Grad von $\xi$, sei
         \begin{equation}
             m \in \mathbb{Z} \text{, sodass} \  m > 8 n^2 \varepsilon^{-2} \label{eq:def-m}
         \end{equation}
-        \textrm{für $n = \deg f$ aus~\eqref{eq:def-n-a} und seien $\enum{r_1}{r_m} \in \mathbb{N}$.
+        \textrm{und seien $\enum{r_1}{r_m} \in \mathbb{N}$.
         Dann existiert ein $R$ nach Definition in~\ref{subsubsec:def-poly} mit ganzzahligen Koeffizienten und höchstens
         Grad $r_\mu$ in $x_\mu \ (\forall \ 1 \leq \mu \leq m)$, für das gilt:}
         \begin{enumerate}
@@ -21,7 +21,7 @@
                 $(\enum{r_1}{r_m})$}
             \item $\content{R} \leq \gamma^{\dsum{r_1}{r_m}}$ mit $\gamma = 4 (a + 1)$
         \end{enumerate}
-        \textrm{mit a aus~\eqref{eq:def-n-a}.\ Hier ist vor allem wichtig, dass diese Aussagen für ein $m >$ eine Konstante
+        \textrm{mit a aus~\eqref{eq:def-a}.\ Hier ist vor allem wichtig, dass diese Aussagen für ein $m >$ eine Konstante
         abhängig von $\xi$ und $\varepsilon$ gelten.\ Der genaue Wert von $\gamma$ ist ebenfalls recht irrelevant, er
         kann von $\varepsilon$, $\xi$ oder $m$ abhängen.}
         \newline \newline
@@ -31,24 +31,25 @@
     
     \subsection{Beweis des \emph{Theorem II}}
         \label{subsec:proof-th2}
-        \textrm{Wie in der \hyperref[sec:th2]{Einleitung des Kapitels} erwähnt, läuft der Beweis darauf hinaus, das \hyperref
-        [subsec:lemma3]{Lemma 3} anzuwenden.\ Die nötige Vorarbeit wird in erster Linie mit den Lemmata \hyperref
-        [subsec:lemma4]{4} und \hyperref[subsec:lemma5]{5} geleistet.}
-        \begin{proofname}{\emph{\hyperref[subsec:th2]{Theorem II}}}
-            Sei $R$ ein Polynom nach Definition in~\ref{subsubsec:def-poly} und seien $\varepsilon$, $\xi$, $m$ und $\enum
-            {r_1}{r_m}$ wie in~\ref{subsec:th2} beschrieben.
+        \textrm{Wie in der \hyperref[sec:th2]{Einleitung des Kapitels} erwähnt, läuft der Beweis darauf hinaus, das
+        \hyperref[subsec:lemma3]{Lemma 3} anzuwenden.\ Die nötige Vorarbeit wird in erster Linie mit den Lemmata
+        \hyperref[subsec:lemma4]{4} und \hyperref[subsec:lemma5]{5} geleistet.}
+        \begin{namedproof}{\emph{\hyperref[subsec:th2]{Theorem II}}}
+            Sei $R$ ein Polynom nach Definition in~\ref{subsubsec:def-poly} und seien $\varepsilon,\ \xi,\ n,\ m \sptext
+            {und} \enum{r_1}{r_m}$ wie in~\ref{subsec:th2} beschrieben.
             \newline
-            Zu zeigen ist, dass $\spdots{(r_1+1)}{{r_m+1}} = N$ vielen Koeffizienten von R existieren.
+            Zu zeigen ist, dass die $\spdots{(r_1+1)}{(r_m+1)} = N$ vielen Koeffizienten von R existieren.
             \newline 
-            Es soll gelten $\forall \ \enum{i_1}{i_m} \in \mathbb{N}$:
+            Dazu soll gelten $\forall \ \enum{i_1}{i_m} \in \mathbb{N}$:
             \begin{equation}
                 R_{\enum{i_1}{i_m}}(\enum{\xi}{\xi}) = 0 \label{eq:rem-poly-condition}
             \end{equation}
-            sodass gilt:
+            sodass ebenfalls gilt:
             \begin{equation*}
                 \sum_{1 \leq \mu \leq m} \frac{i_\mu}{r_\mu} \leq \den{2} m(1 - \varepsilon)
             \end{equation*}
             Da das Polynom verschwindet und~\eqref{eq:rem-poly-condition} somit trivial ist, falls $i_\mu > r_\mu$, sei
             also $i_\mu \leq r_\mu$ ($\forall \ 1 \leq \mu \leq m$).
-        \end{proofname}
+            
+        \end{namedproof}
     

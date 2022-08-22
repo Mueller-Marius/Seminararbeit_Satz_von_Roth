@@ -6,8 +6,8 @@
 \contentsline {section}{\numberline {3}Grundlagen und Voraussetzungen}{4}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Notation}{4}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}algebraische Zahlen}{4}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Satz von Roth (\emph {Theorem I})}{4}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Normieren des Polynoms}{5}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.3}Der Satz von Roth (\emph {Theorem I})}{4}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Normieren des Polynoms einer algebraischen Zahl}{5}{subsection.3.4}%
 \contentsline {subsection}{\numberline {3.5}Polynome}{5}{subsection.3.5}%
 \contentsline {subsubsection}{\numberline {3.5.1}Definition der Polynome}{5}{subsubsection.3.5.1}%
 \contentsline {subsubsection}{\numberline {3.5.2}Der Inhalt eines Polynoms}{6}{subsubsection.3.5.2}%
