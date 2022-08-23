@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.7) (preloaded format=pdflatex 2021.12.14)  22 AUG 2022 20:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.7) (preloaded format=pdflatex 2021.12.14)  24 AUG 2022 00:55
 entering extended mode
 **./main.tex
 (main.tex
@@ -927,30 +927,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
 
-(polynomials.tex
-Underfull \hbox (badness 10000) in paragraph at lines 14--21
-
- []
-
-[5]
-Overfull \hbox (1.28662pt too wide) in paragraph at lines 32--34
+(polynomials.tex [5]
+Overfull \hbox (1.28662pt too wide) in paragraph at lines 31--33
 \OT1/cmr/m/n/10.95 Sei R ein Polynom nach []obiger Definition[]. Dann sei der \
 OT1/cmr/m/it/10.95 Inhalt \OT1/cmr/m/n/10.95 eines Polynoms
  []
 
 
-Overfull \hbox (19.47348pt too wide) in paragraph at lines 57--67
+Overfull \hbox (19.47348pt too wide) in paragraph at lines 56--66
 \OT1/cmr/m/n/10.95 Dies erinnert an die \OT1/cmr/m/it/10.95 Nullstellenordnung 
 \OT1/cmr/m/n/10.95 einer Funktion (beispielsweise Nullstellen
  []
 
-) [6]
+
+Overfull \hbox (2.42505pt too wide) in paragraph at lines 56--66
+\OT1/cmr/m/n/10.95 jedoch nicht weiter verwendet; er findet lediglich in den Be
+weisen der weiteren
+ []
+
+)
 Overfull \hbox (10.21683pt too wide) in paragraph at lines 74--75
 []$\OML/cmm/m/it/10.95 R$ \OT1/cmr/m/n/10.95 hat ausschlielich Koeffizienten i
 n $\U/msb/m/n/10.95 Z \OMS/cmsy/m/n/10.95 ) \OML/cmm/m/it/10.95 R[]$ \OT1/cmr/m
 /n/10.95 hat auch ausschlielich
  []
 
+[6]
 preliminaries.tex:77: Missing $ inserted.
 <inserted text> 
                 $
@@ -1013,7 +1015,7 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  22182 strings out of 480616
  424574 string characters out of 2896114
- 690875 words of memory out of 3000000
+ 691867 words of memory out of 3000000
  39592 multiletter control sequences out of 15000+600000
  414656 words of font info for 68 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
@@ -1045,9 +1047,9 @@ rary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/c
 mti10.pfb></Users/gurki/Library/Application Support/MiKTeX/texmfs/install/fonts
 /type1/public/amsfonts/symbols/msbm10.pfb>
 Output written on "/Users/gurki/IdeaProjects/Seminararbeit Satz von Roth/out/ma
-in.pdf" (10 pages, 272892 bytes).
+in.pdf" (10 pages, 273362 bytes).
 PDF statistics:
- 318 PDF objects out of 1000 (max. 8388607)
+ 319 PDF objects out of 1000 (max. 8388607)
  54 named destinations out of 1000 (max. 500000)
  197 words of extra memory for PDF output out of 10000 (max. 10000000)
 
