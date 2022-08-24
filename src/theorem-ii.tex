@@ -3,7 +3,7 @@
     \label{sec:th2}
     \textrm{In diesem Kapitel wird das Polynom $R$ konstruiert, das später im Beweis des \emph{Satzes von Roth}
     verwendet werden wird.\ Zum Beweis des \emph{Theorem II} werden drei Lemmata benötigt, von denen das \hyperref
-    [subsec:lemma3]{Lemma 3} das zentrale Lemma ist, das am Ende die Bestimmung der Koeffizienten des Polynoms
+    [subsec:lemma3]{Lemma~3} das zentrale Lemma ist, das am Ende die Bestimmung der Koeffizienten des Polynoms
     ermöglicht.}
     
     \subsection{Aussage des \emph{Theorem II}}
@@ -13,13 +13,14 @@
             m \in \mathbb{Z} \text{, sodass} \  m > 8 n^2 \varepsilon^{-2} \label{eq:def-m}
         \end{equation}
         \textrm{und seien $\enum{r_1}{r_m} \in \mathbb{N}$.
-        Dann existiert ein $R$ nach Definition in~\ref{subsubsec:def-poly} mit ganzzahligen Koeffizienten und höchstens
-        Grad $r_\mu$ in $x_\mu \ (\forall \ 1 \leq \mu \leq m)$, für das gilt:}
+        \newline
+        Dann existiert ein Polynom $R$ nach Definition in~\ref{subsubsec:def-poly} mit ganzzahligen Koeffizienten und
+        höchstens Grad $r_\mu$ in $x_\mu \ (\forall \ 1 \leq \mu \leq m)$, für das gilt:}
         \begin{enumerate}
-            \item $R$ verschwindet nicht
+            \item $R$ verschwindet nicht \label{st:R-st}
             \item \textrm{$\ind(R) \geq \den{2} m (1 - \varepsilon)$ an der Stelle $(\enum{\xi}{\xi})$ bezüglich
-                $(\enum{r_1}{r_m})$}
-            \item $\content{R} \leq \gamma^{\dsum{r_1}{r_m}}$ mit $\gamma = 4 (a + 1)$
+                $(\enum{r_1}{r_m})$} \label{st:ind-st}
+            \item $\content{R} \leq \gamma^{\dsum{r_1}{r_m}}$ mit $\gamma = 4 (a + 1)$ \label{st:cont-st}
         \end{enumerate}
         \textrm{mit a aus~\eqref{eq:def-a}.\ Hier ist vor allem wichtig, dass diese Aussagen für ein $m >$ eine Konstante
         abhängig von $\xi$ und $\varepsilon$ gelten.\ Der genaue Wert von $\gamma$ ist ebenfalls recht irrelevant, er
@@ -32,7 +33,7 @@
     \subsection{Beweis des \emph{Theorem II}}
         \label{subsec:proof-th2}
         \textrm{Wie in der \hyperref[sec:th2]{Einleitung des Kapitels} erwähnt, läuft der Beweis darauf hinaus, das
-        \hyperref[subsec:lemma3]{Lemma 3} anzuwenden.\ Die nötige Vorarbeit wird in erster Linie mit den Lemmata
+        \hyperref[subsec:lemma3]{Lemma~3} anzuwenden.\ Die nötige Vorarbeit wird in erster Linie mit den Lemmata
         \hyperref[subsec:lemma4]{4} und \hyperref[subsec:lemma5]{5} geleistet.}
         \begin{namedproof}{\emph{\hyperref[subsec:th2]{Theorem II}}}
             Sei $R$ ein Polynom nach Definition in~\ref{subsubsec:def-poly} und seien $\varepsilon,\ \xi,\ n,\ m \sptext
@@ -45,13 +46,48 @@
                 R_{\enum{i_1}{i_m}}(\enum{\xi}{\xi}) = 0 \label{eq:rem-poly-condition}
             \end{equation}
             sodass ebenfalls gilt:
-            \begin{equation*}
-                \sum_{1 \leq \mu \leq m} \frac{i_\mu}{r_\mu} \leq \den{2} m(1 - \varepsilon)
-            \end{equation*}
+            \begin{equation}
+                \sum_{1 \leq \mu \leq m} \frac{i_\mu}{r_\mu} \leq \den{2} m(1 - \varepsilon) \label{eq:ind-condition}
+            \end{equation}
             Da das Polynom verschwindet und~\eqref{eq:rem-poly-condition} somit trivial ist, falls $i_\mu > r_\mu$, sei
-            also $i_\mu \leq r_\mu$ ($\forall \ 1 \leq \mu \leq m$).
-            \hyperref[subsec:lemma4]{Lemma 4} erlaubt es, alle Potenzen von $\xi$ als Linearkombinationen von $1, \enum{\xi}
-            {\xi^-1}$ zu schreiben.\ Diese lassen sich als lineares Gleichungssystem mit $n$ Gleichungen in den Variablen
-            $c_{\enum{j_1}{j_m}}$ auffassen.
+            also $i_\mu \leq r_\mu \ (\spaceoperator 1 \leq \mu \leq m)$.
+            \newline
+            \hyperref[subsec:lemma4]{Lemma~4} erlaubt es, alle Potenzen von $\xi$ als Linearkombinationen von $1, \enum
+            {\xi}{\xi^{n-1}}$ zu schreiben.\ Diese lassen sich als lineares Gleichungssystem mit $n$ Gleichungen in den
+            Variablen $c_{\enum{j_1}{j_m}}$ auffassen:
+            \begin{equation*}
+                L_k = \sum_{\substack{0 \leq j_\mu \leq r_\mu \\ 1 \leq \mu \leq m}} a_{k, \enum{j_1}{j_m}} c_{\enum{j_1}
+                {j_m}} \sptext{mit} 1 \leq k \leq n.
+            \end{equation*}
+            \hyperref[subsec:lemma4]{Lemma~4} und~\eqref{eq:2.4} liefern, dass die Koeffizienten die folgende Form haben:
+            \begin{equation*}
+                \spdots{\binom{j_1}{i_1}}{\binom{j_m}{i_m}}a_{j,l} \sptext{mit} 0 \leq j < n
+            \end{equation*}
+            wobei $l = \dsum{(j_1 - i_1)}{(j_m - i_m)} \leq \dsum{r_1}{r_m}$ sei.
+            \textrm{Wegen~\eqref{eq:2.5} und erneut \hyperref[subsec:lemma4]{Lemma~4} sind die Koeffizienten betragsmäßig
+            nach oben beschränkt durch:}
+            \begin{equation}
+                A = (2a + 2)^{\dsum{r_1}{r_m}} \label{eq:coeff-condition}
+            \end{equation}
+            \textrm{Das \hyperref[subsec:lemma5]{Lemma~5} (mit $\lambda = m \varepsilon$) und~\eqref{eq:def-m} liefern,
+            dass die Anzahl $M$ an Gleichungen im System $L$ in $N$ Variablen aus~\hyperref[subsec:lemma3]{Lemma~3}
+            folgendermaßen beschränkt sind:}
+            \begin{equation}
+                M \leq n \frac{\sqrt{2m}}{m \varepsilon} N \leq \den{2} N \label{eq:M-condition}
+            \end{equation}
+            Dies zeigt~\ref{st:ind-st}.
+            \newline
+            \textrm{Nun sagt \hyperref[subsec:lemma3]{Lemma~3} aus, dass die Koeffizienten $c_{\enum{j_1}{j_m}}$ als ganze
+            Zahlen existieren, nicht alle veschwinden (was~\ref{st:R-st} impliziert) und~\eqref{eq:rem-poly-condition},
+            ~\eqref{eq:ind-condition} und die Beschränkung $i_\mu~\leq~r_\mu$ erfüllen und wegen~\eqref{eq:coeff-condition}
+            und~\eqref{eq:M-condition} betrangsmäßig beschränkt sind durch:}
+            \begin{equation*}
+                \left| c_{\enum{j_1}{j_m}} \right| \leq (NA)^{\frac{M}{N-M}} \leq NA \leq \gamma^{\dsum{r_1}{r_m}}
+            \end{equation*}
+            und mit~\eqref{eq:2.5} folgt
+            \begin{equation*}
+                N = \spdots{(r_1 + 1)}{(r_m + 1)} \leq \gamma^{\dsum{r_1}{r_m}}.
+            \end{equation*}
+            Dies zeigt~\ref{st:cont-st}; somit gelten alle Aussagen aus \hyperref[subsec:th2]{\emph{Theorem~II}}.
         \end{namedproof}
     

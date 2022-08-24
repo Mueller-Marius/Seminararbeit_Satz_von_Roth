@@ -76,8 +76,20 @@
             - i_\mu$ in $x_\mu$ und verschwindet für $r_\mu < i_\mu$ ($\forall \  1 \leq \mu \leq m$)}
             \item $\content{R_{\enum{i_1}{i_m}}} \leq 2^{\dsum{r_1}{r_m}} \content{R}$
         \end{enumerate}
-        \textrm{Diese Aussagen sind recht trivial, daher wird hier auf einen ausführlichen Beweis
-        verzichtet und dem*der Leser*in überlassen.}
+        \textrm{Diese Aussagen sind recht trivial; der Beweis wird nur vollzogen, da die folgenden Aussagen im späteren
+        Verlauf benötigt werden.}
+        \begin{proof}
+            Die Aussagen folgen aus
+            \begin{equation}
+                R_{\enum{i_1}{i_m}}(\enum{x_1}{x_m}) = \sum_{\substack{0 \leq j_\mu \leq r_\mu \\ 1 \leq \mu \leq m}}
+                \spdots{\binom{j_1}{i_1}}{\binom{j_m}{i_m}}c_{\enum{j_1}{j_m}} \cdot \spdots{x_1^{j_1}}{x_m^{j_m}},
+                \label{eq:2.4}
+            \end{equation}
+            \textrm{wobei die Binominalkoeffizienten $\binom{j}{i}$ nach oben beschränkt sind durch:}
+            \begin{equation}
+                \binom{j}{i} \leq \sum_{0 \leq i \leq j} \binom{j}{i} = (1 + 1)^j \leq 2^r. \label{eq:2.5}
+            \end{equation}
+        \end{proof}
     
     \subsection{Lemma 2}
         \label{subsec:lemma2}

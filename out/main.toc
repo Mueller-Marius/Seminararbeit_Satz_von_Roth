@@ -15,9 +15,9 @@
 \contentsline {subsubsection}{\numberline {3.5.4}Der Index eines Polynoms}{6}{subsubsection.3.5.4}%
 \contentsline {subsection}{\numberline {3.6}Lemma 1}{7}{subsection.3.6}%
 \contentsline {subsection}{\numberline {3.7}Lemma 2}{7}{subsection.3.7}%
-\contentsline {section}{\numberline {4}Konstruktion des Polynoms R (\emph {Theorem II})}{7}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Aussage des \emph {Theorem II}}{7}{subsection.4.1}%
+\contentsline {section}{\numberline {4}Konstruktion des Polynoms R (\emph {Theorem II})}{8}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Aussage des \emph {Theorem II}}{8}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Lemma 3}{8}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Lemma 4}{8}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.3}Lemma 4}{9}{subsection.4.3}%
 \contentsline {subsection}{\numberline {4.4}Lemma 5}{9}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Beweis des \emph {Theorem II}}{9}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.5}Beweis des \emph {Theorem II}}{10}{subsection.4.5}%
