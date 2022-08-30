@@ -1,0 +1,54 @@
+
+\section{Grundlagen und Voraussetzungen}
+    \label{sec:preliminaries}
+    \textrm{In diesem Kapitel werden die Grundlagen behandelt, die für den Beweis des \emph{Satzes von Roth} benötigt
+    werden. Außerdem wird die formale Aussage des Satzes dargelegt; der Beweis wird jedoch nicht in dieser Arbeit vollzogen.}
+    
+    \subsection{Notation}
+    \label{subsec:notation}
+        \textrm{In dieser Arbeit wird $\mathbb{N}$ verwendet als natürliche Zahlen \emph{ohne} Null, wogegen $\mathbb{N}_0$
+        die natürlichen Zahlen \emph{inklusive} der Null meint.}
+    
+    \input{preliminaries.tex}
+    
+    \input{polynomials.tex}
+    
+    \subsection{Lemma 1}
+        \label{subsec:lemma1}
+        Sei R ein Polynom nach \hyperref[subsubsec:def-poly]{obiger Definition}.\ Dann gilt:
+        \begin{enumerate}
+            \item \textrm{$R$ hat ausschließlich Koeffizienten in $\mathbb{Z} \Rightarrow R_{\enum{i_1}{i_m}}$ hat
+            auch ausschließlich Koeffizienten in $\mathbb{Z}$}
+            \item \textrm{$R$ hat Grad $r_\mu$ in $x_\mu \Rightarrow R_{\enum{i_1}{i_m}}$ hat höchstens Grad $r_\mu
+            - i_\mu$ in $x_\mu$ und verschwindet für $r_\mu < i_\mu$ ($\forall \  1 \leq \mu \leq m$)}
+            \item $\content{R_{\enum{i_1}{i_m}}} \leq 2^{\dsum{r_1}{r_m}} \content{R}$
+        \end{enumerate}
+        \textrm{Diese Aussagen sind recht trivial; der Beweis wird nur vollzogen, da die folgenden Aussagen im späteren
+        Verlauf benötigt werden.}
+        \begin{proof}
+            Die Aussagen folgen aus
+            \begin{equation}
+                R_{\enum{i_1}{i_m}}(\enum{x_1}{x_m}) = \sum_{\substack{0 \leq j_\mu \leq r_\mu \\ 1 \leq \mu \leq m}}
+                \spdots{\binom{j_1}{i_1}}{\binom{j_m}{i_m}}c_{\enum{j_1}{j_m}} \cdot \spdots{x_1^{j_1}}{x_m^{j_m}},
+                \label{eq:2.4}
+            \end{equation}
+            \textrm{wobei die Binominalkoeffizienten $\binom{j}{i}$ nach oben beschränkt sind durch:}
+            \begin{equation}
+                \binom{j}{i} \leq \sum_{0 \leq i \leq j} \binom{j}{i} = (1 + 1)^j \leq 2^r. \label{eq:2.5}
+            \end{equation}
+        \end{proof}
+    
+    \subsection{Lemma 2}
+        \label{subsec:lemma2}
+        Seien $\alpha \in \mathbb{R}^m,\ s \in \mathbb{N}^m$ und $R$ und $T$ Polynome nach \hyperref
+        [subsubsec:def-poly]{obiger Definition}.\ Dann gilt:
+        \begin{enumerate}
+            \item $\ind(R_{\enum{i_1}{i_m}}) \geq \ind(R) - \sum \frac{i_\mu}{s_\mu}$
+            \item $\ind(R_1 + R_2) \geq \min \{ \ind(R_1), \ind(R_2) \}$
+            \item $\ind(R \cdot T) = \ind(R) +\ind(T)$
+        \end{enumerate}
+        \textrm{Da der Begriff des \emph{Index} in dieser Arbeit keine weitere Anwendung findet und die Aussagen
+        außerdem nach kurzem Durchdenken ebenfalls recht trivial sind, wird auch hier auf einen ausführlichen Beweis
+        verzichtet.}
+
+    

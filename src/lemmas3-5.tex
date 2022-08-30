@@ -3,21 +3,45 @@
     \label{subsec:lemma3}
     Seien $N, M \in \mathbb{N} \sptext{mit} N > M$ und seien
     \begin{equation*}
-        L_j = \sum_{1 \leq k \leq N} a_{jk} z_k \sptext{mit} 1 \leq j \leq M
+        L_j(\enum{z_1}{z_N}) = \sum_{1 \leq k \leq N} a_{jk} z_k \sptext{mit} 1 \leq j \leq M
     \end{equation*}
     $M$ viele $N$-Linearformen mit Koeffizienten $a_k \in \mathbb{Z}$ in $N$ vielen Variablen $z_k$.
     \textrm{Sei außerdem} $A \in \mathbb{N}$, sodass
     \begin{equation*}
         \left| a_{jk} \right| \leq A \ \ \forall \ 1 \leq j \leq M, 1 \leq k \leq N
     \end{equation*}
-    \textrm{Dann besitzt das System $L$ in den Variablen $\enum{z_1}{z_N}$ Lösungen in $\mathbb{Z}$, die nicht alle
+    \textrm{Dann besitzt das System $L = (\enum{L_1}{L_M})$ in den Variablen $\enum{z_1}{z_N}$ Lösungen in $\mathbb{Z}$, die nicht alle
     verschwinden und sodass gilt:}
     \begin{equation*}
         L_j = 0 \sptext{mit} 1 \leq j \leq M \sptext{und} \left| z_i \right| \leq Z = \left[ (NA)^{\frac{M}{N-M}} \right]
         \sptext{mit} 1 \leq k \leq n.
     \end{equation*}
     \begin{proof}
-        bla
+        Seien $N, M, A, Z$ wie oben beschrieben.\ Es gilt:
+        \begin{equation*}
+            NA < (Z + 1)^{\frac{N-M}{M}}
+        \end{equation*}
+        woraus folgt:
+        \begin{equation*}
+            NAZ+1 \leq NA(Z + 1) < (Z + 1)^{\frac{N}{M}}
+        \end{equation*}
+        \textrm{Für alle} $N$-Tupel $\zeta = (\enum{z_1}{z_N})$ mit
+        \begin{equation}
+            0 \leq z_k \leq Z \sptext{mit} 1 \leq k \leq N \label{eq:z_k-condition}
+        \end{equation}
+        gilt:
+        \begin{equation*}
+            \shine
+        \end{equation*}
+        \textrm{Somit ergeben sich für $L_j(z) \in \mathbb{Z}$ höchstens $NAZ+1$ viele verschiedene Werte und es existieren
+        höchstens $(Z + 1)^N$ viele verschiedene $\zeta$, woraus sich jedoch höchstens $(Z + 1)^N > (NAZ+1)^M$ viele
+        verschiedene $L$ ergeben.}
+        \newline
+        Somit existieren zwei verschiedene $M$-Tupel $\zeta_1, \zeta_2$, sodass gilt:
+        \begin{equation*}
+            L_j(\zeta_1) = L_j(\zeta_2) \sptext{mit} 1 \leq j \leq M.
+        \end{equation*}
+        mit $\zeta = \zeta_1 - \zeta_2$ folgt die Behauptung.
     \end{proof}
 
 \subsection{Lemma 4}
@@ -49,7 +73,7 @@
                 \xi^{l+1} = \xi \cdot \xi^l = \dsum{a_{n-1, l}\xi^{n}}{a_{0,l} \xi}.
             \end{equation*}
         \end{indentpar}
-        \textrm{Somit gilt die Aussage für alle $l \in \mathbb{N}$.}
+        \textrm{Per Induktionsaxiom folgt die Aussage für alle $l \in \mathbb{N}$.}
     \end{proof}
 
 \subsection{Lemma 5}
@@ -63,6 +87,6 @@
         \sum_{\substack{0 \leq i_\mu \leq r_\mu \\ 1 \leq \mu \leq m}} \frac{i_\mu}{r_\mu} \leq \den{2} (m - \lambda)
     \end{equation*}
     \begin{proof}
-        bla \shine
+        bla. \shine
     \end{proof}
     
