@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.7) (preloaded format=pdflatex 2021.12.14)  30 AUG 2022 20:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.7) (preloaded format=pdflatex 2021.12.14)  5 SEP 2022 19:53
 entering extended mode
 **./main.tex
 (main.tex
@@ -928,35 +928,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--31
  []
 
 ) (polynomials.tex [5]
-Overfull \hbox (1.28662pt too wide) in paragraph at lines 31--33
-\OT1/cmr/m/n/10.95 Sei R ein Polynom nach []obiger Definition[]. Dann sei der \
-OT1/cmr/m/it/10.95 Inhalt \OT1/cmr/m/n/10.95 eines Polynoms
+Underfull \hbox (badness 10000) in paragraph at lines 57--67
+
  []
 
 
-Overfull \hbox (19.47348pt too wide) in paragraph at lines 56--66
+Overfull \hbox (19.47348pt too wide) in paragraph at lines 57--67
 \OT1/cmr/m/n/10.95 Dies erinnert an die \OT1/cmr/m/it/10.95 Nullstellenordnung 
 \OT1/cmr/m/n/10.95 einer Funktion (beispielsweise Nullstellen
  []
 
 
-Overfull \hbox (2.42505pt too wide) in paragraph at lines 56--66
+Underfull \hbox (badness 10000) in paragraph at lines 57--67
+
+ []
+
+
+Overfull \hbox (2.42505pt too wide) in paragraph at lines 57--67
 \OT1/cmr/m/n/10.95 jedoch nicht weiter verwendet; er findet lediglich in den Be
 weisen der weiteren
  []
 
-)
+) [6]
 Overfull \hbox (10.21683pt too wide) in paragraph at lines 21--22
 []$\OML/cmm/m/it/10.95 R$ \OT1/cmr/m/n/10.95 hat ausschlielich Koeffizienten i
 n $\U/msb/m/n/10.95 Z \OMS/cmsy/m/n/10.95 ) \OML/cmm/m/it/10.95 R[]$ \OT1/cmr/m
 /n/10.95 hat auch ausschlielich
  []
 
-[6]
 basics.tex:24: Missing $ inserted.
 <inserted text> 
                 $
-l.24 ...      \item $\content{R_{\enum{i_1}{i_m}}}
+l.24 ...tem Es gilt $\content{R_{\enum{i_1}{i_m}}}
                                                    \leq 2^{\dsum{r_1}{r_m}} ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -964,7 +967,7 @@ you left one out. Proceed, with fingers crossed.
 basics.tex:24: Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.24 ...      \item $\content{R_{\enum{i_1}{i_m}}}
+l.24 ...tem Es gilt $\content{R_{\enum{i_1}{i_m}}}
                                                    \leq 2^{\dsum{r_1}{r_m}} ...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -975,7 +978,7 @@ deleted material, e.g., by typing `I$}'.
 basics.tex:24: Missing $ inserted.
 <inserted text> 
                 $
-l.24 ...      \item $\content{R_{\enum{i_1}{i_m}}}
+l.24 ...tem Es gilt $\content{R_{\enum{i_1}{i_m}}}
                                                    \leq 2^{\dsum{r_1}{r_m}} ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -983,7 +986,7 @@ you left one out. Proceed, with fingers crossed.
 basics.tex:24: Missing } inserted.
 <inserted text> 
                 }
-l.24 ...      \item $\content{R_{\enum{i_1}{i_m}}}
+l.24 ...tem Es gilt $\content{R_{\enum{i_1}{i_m}}}
                                                    \leq 2^{\dsum{r_1}{r_m}} ...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -991,68 +994,64 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--31
+
+ []
+
 ) (theorem-ii.tex [7]
 Underfull \hbox (badness 10000) in paragraph at lines 27--30
 
  []
 
-(lemmas3-5.tex [8]
-
-LaTeX Font Warning: Font shape `U/wasy/bx/n' in size <10.95> not available
-(Font)              Font shape `U/wasy/b/n' tried instead on input line 34.
-
-Package mdframed Info: Not enough space on this page on input line 64.
-[9]
-Package mdframed Info: Not enough space on this page on input line 64.
-)
+(lemmas3-5.tex [8] [9]) [10]
 Overfull \hbox (3.99199pt too wide) in paragraph at lines 37--45
 \OT1/cmr/m/n/10.95 Sei $\OML/cmm/m/it/10.95 R$ \OT1/cmr/m/n/10.95 ein Polynom n
 ach Definition in []3.5.1[] und seien $\OML/cmm/m/it/10.95 ";  ;  n;  m [] r[]
 ; [] ; r[]$
  []
 
-[10]) [11] (/Users/gurki/IdeaProjects/Seminararbeit Satz von Roth/out/main.aux)
+[11]) [12] (/Users/gurki/IdeaProjects/Seminararbeit Satz von Roth/out/main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 44BBEF2C770C69B445D13FD33676BA3D;3832.
  ) 
 Here is how much of TeX's memory you used:
- 22210 strings out of 480616
- 424972 string characters out of 2896114
- 692274 words of memory out of 3000000
- 39608 multiletter control sequences out of 15000+600000
- 415277 words of font info for 70 fonts, out of 8000000 for 9000
+ 22206 strings out of 480616
+ 424929 string characters out of 2896114
+ 694346 words of memory out of 3000000
+ 39604 multiletter control sequences out of 15000+600000
+ 414436 words of font info for 67 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
- 129i,10n,135p,489b,965s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 129i,10n,135p,489b,969s stack positions out of 5000i,500n,10000p,200000b,80000s
  </Users/gurki/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour
-/public/wasy/dpi657/wasyb10.pk> </Users/gurki/Library/Application Support/MiKTe
-X/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk></Users/gurki/Libr
-ary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cm
-bx10.pfb></Users/gurki/Library/Application Support/MiKTeX/texmfs/install/fonts/
-type1/public/amsfonts/cm/cmbx12.pfb></Users/gurki/Library/Application Support/M
-iKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></Users/gurki/
-Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/c
-m/cmex10.pfb></Users/gurki/Library/Application Support/MiKTeX/texmfs/install/fo
-nts/type1/public/amsfonts/cm/cmmi10.pfb></Users/gurki/Library/Application Suppo
-rt/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></Users/gurki
-/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/
-cm/cmmi8.pfb></Users/gurki/Library/Application Support/MiKTeX/texmfs/install/fo
-nts/type1/public/amsfonts/cm/cmr10.pfb></Users/gurki/Library/Application Suppor
-t/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/gurki/
-Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/c
-m/cmr17.pfb></Users/gurki/Library/Application Support/MiKTeX/texmfs/install/fon
-ts/type1/public/amsfonts/cm/cmr6.pfb></Users/gurki/Library/Application Support/
-MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></Users/gurki/Lib
+/jknappen/ec/dpi600/tcrm1095.pk></Users/gurki/Library/Application Support/MiKTe
+X/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/gurki/Librar
+y/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx
+12.pfb></Users/gurki/Library/Application Support/MiKTeX/texmfs/install/fonts/ty
+pe1/public/amsfonts/cm/cmbxti10.pfb></Users/gurki/Library/Application Support/M
+iKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></Users/gurki/Li
+brary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/
+cmmi10.pfb></Users/gurki/Library/Application Support/MiKTeX/texmfs/install/font
+s/type1/public/amsfonts/cm/cmmi6.pfb></Users/gurki/Library/Application Support/
+MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Users/gurki/Li
+brary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/
+cmr10.pfb></Users/gurki/Library/Application Support/MiKTeX/texmfs/install/fonts
+/type1/public/amsfonts/cm/cmr12.pfb></Users/gurki/Library/Application Support/M
+iKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></Users/gurki/Lib
 rary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/c
-msy10.pfb></Users/gurki/Library/Application Support/MiKTeX/texmfs/install/fonts
-/type1/public/amsfonts/cm/cmsy6.pfb></Users/gurki/Library/Application Support/M
-iKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></Users/gurki/Lib
-rary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/c
-mti10.pfb></Users/gurki/Library/Application Support/MiKTeX/texmfs/install/fonts
-/type1/public/amsfonts/symbols/msbm10.pfb>
+mr6.pfb></Users/gurki/Library/Application Support/MiKTeX/texmfs/install/fonts/t
+ype1/public/amsfonts/cm/cmr8.pfb></Users/gurki/Library/Application Support/MiKT
+eX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/gurki/Libra
+ry/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cms
+y6.pfb></Users/gurki/Library/Application Support/MiKTeX/texmfs/install/fonts/ty
+pe1/public/amsfonts/cm/cmsy8.pfb></Users/gurki/Library/Application Support/MiKT
+eX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb></Users/gurki/Libra
+ry/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/symbol
+s/msbm10.pfb>
 Output written on "/Users/gurki/IdeaProjects/Seminararbeit Satz von Roth/out/ma
-in.pdf" (11 pages, 283273 bytes).
+in.pdf" (12 pages, 286729 bytes).
 PDF statistics:
- 348 PDF objects out of 1000 (max. 8388607)
- 61 named destinations out of 1000 (max. 500000)
+ 350 PDF objects out of 1000 (max. 8388607)
+ 64 named destinations out of 1000 (max. 500000)
  197 words of extra memory for PDF output out of 10000 (max. 10000000)
 

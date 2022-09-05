@@ -10,14 +10,17 @@
     \begin{equation*}
         \left| a_{jk} \right| \leq A \ \ \forall \ 1 \leq j \leq M, 1 \leq k \leq N
     \end{equation*}
-    \textrm{Dann besitzt das System $L = (\enum{L_1}{L_M})$ in den Variablen $\enum{z_1}{z_N}$ Lösungen in $\mathbb{Z}$, die nicht alle
-    verschwinden und sodass gilt:}
+    \textrm{Dann besitzt das System $L = (\enum{L_1}{L_M})$ in den Variablen $\enum{z_1}{z_N}$ Lösungen in $\mathbb{Z}$,
+    die nicht alle verschwinden und sodass gilt:}
     \begin{equation*}
         L_j = 0 \sptext{mit} 1 \leq j \leq M \sptext{und} \left| z_i \right| \leq Z = \left[ (NA)^{\frac{M}{N-M}} \right]
         \sptext{mit} 1 \leq k \leq n.
     \end{equation*}
     \begin{proof}
-        Seien $N, M, A, Z$ wie oben beschrieben.\ Es gilt:
+        Seien $N, M, A, Z$ wie oben beschrieben.\ Sei $- B_j$ die Summe der negativen und $P_j$ die Summe der positiven
+        Koeffizienten in $L_j(z)$.
+        \newline
+        Es gilt:
         \begin{equation*}
             NA < (Z + 1)^{\frac{N-M}{M}}
         \end{equation*}
@@ -31,11 +34,11 @@
         \end{equation}
         gilt:
         \begin{equation*}
-            \shine
+            - B_j Z \leq L_j(z) \leq P_j Z \sptext{und} B_j + P_j \leq N A
         \end{equation*}
-        \textrm{Somit ergeben sich für $L_j(z) \in \mathbb{Z}$ höchstens $NAZ+1$ viele verschiedene Werte und es existieren
-        höchstens $(Z + 1)^N$ viele verschiedene $\zeta$, woraus sich jedoch höchstens $(Z + 1)^N > (NAZ+1)^M$ viele
-        verschiedene $L$ ergeben.}
+        \textrm{Somit ergeben sich für $L_j(z) \in \mathbb{Z}$ höchstens $NAZ+1$ viele verschiedene Werte. Es existieren
+        auch höchstens $(Z + 1)^N$ viele verschiedene $\zeta$, woraus sich jedoch höchstens $(Z + 1)^N > (NAZ+1)^M$ viele
+        verschiedene Systeme $L$ ergeben.}
         \newline
         Somit existieren zwei verschiedene $M$-Tupel $\zeta_1, \zeta_2$, sodass gilt:
         \begin{equation*}
@@ -57,7 +60,7 @@
     \end{equation*}
     \begin{proof}
         \textrm{Für $l < n$ ist die Aussage offensichtlich. Für $l \geq n$ wird eine kurze Induktion aufgezogen:}
-        \newline
+        \newpage
         Induktionsanfang: $l = n$
         \begin{indentpar}
             Folgt durch Umformung aus $f(x) = 0$ aus~\ref{subsec:algebraic-numbers}.
@@ -80,13 +83,35 @@
     \label{subsec:lemma5}
     \textrm{Seien $\enum{r_1}{r_m} \in \mathbb{N}$ und $0 < \lambda \in \mathbb{R}$.\ Dann gibt es höchstens}
     \begin{equation*}
-        \frac{\sqrt{2m}}{\lambda} \spdots{(r_1 + 1)}{(r_m +1)}
+        \sqrt{2m} \lambda^{-1} \spdots{(r_1 + 1)}{(r_m +1)}
     \end{equation*}
-    \textrm{viele $m$-Tupel $(\enum{i_1}{i_m})$, die die folgende Ungleichung erfüllen:}
+    \textrm{viele $m$-Tupel $(\enum{i_1}{i_m}) \in \mathbb{Z}^m$, die die folgende Ungleichung erfüllen:}
     \begin{equation*}
         \sum_{\substack{0 \leq i_\mu \leq r_\mu \\ 1 \leq \mu \leq m}} \frac{i_\mu}{r_\mu} \leq \den{2} (m - \lambda)
     \end{equation*}
     \begin{proof}
-        bla. \shine
+        \textrm{Falls $m = 1$ sieht man leicht, dass höchstens $r_1 + 1$ viele Lösungen möglich sind und die Ungleichung
+        sogar unlösbar ist, falls $\lambda > 1$.\ Für $\sqrt{2m} > \lambda$ ist das Lemma ebenfalls trivial.}
+        \newline
+        \textrm{Angenommen, die Aussage gelte für $m-1$ und seien nun}
+        \begin{equation}
+            m > 1 \sptext{und} \lambda > \sqrt{2m} > 1. \label{eq:sqrt-2m-ass}
+        \end{equation}
+        \textrm{Seien $r = r_m$ und $i = i_m$ beliebig, aber fest.\ Dann beschränkt sich die Anzahl der ganzen Zahlen
+        $\enum{i_1}{i_{m-1}}$ auf}
+        \begin{equation}
+            \sqrt{2m - 2} (\lambda - 1 + 2 \frac{i}{r})^{-1}\enum{(r_1+1)}{(r_{m-1}+1)}. \label{eq:fix-lim}
+        \end{equation}
+        Man sieht schnell:
+        \begin{align*}
+            \sum_{0 \leq i \leq r} \frac{2}{\lambda - 1 + 2\frac{i}{r}} &= \sum_{0 \leq i \leq r} \left( \den{\lambda -
+            1 + 2 \frac{i}{r}} + \den{\lambda + 1 - 2 \frac{i}{r}} \right) \\ &= \sum_{0 \leq i \leq r} \frac{2 \lambda}
+            {\lambda^2 - \left( 1 - 2 \frac{i}{r} \right)^2} < \frac{2 (r + 1) \lambda}{\lambda^2 - 1}
+        \end{align*}
+        \textrm{und durch die Beschränkung aus~\ref{eq:fix-lim} folgt:}
+        \begin{equation*}
+            \lambda^2 - 1 > \lambda^2 (1 - (2m)^{-1}) > \lambda^2 \sqrt{1 - m^{-1}}.
+        \end{equation*}
+        \textrm{Für $i = i_m \in (\enum{0}{r = r_m})$ folgt nun die Behauptung.}
     \end{proof}
     
