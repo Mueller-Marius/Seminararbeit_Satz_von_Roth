@@ -90,17 +90,19 @@
         \sum_{\substack{0 \leq i_\mu \leq r_\mu \\ 1 \leq \mu \leq m}} \frac{i_\mu}{r_\mu} \leq \den{2} (m - \lambda)
     \end{equation*}
     \begin{proof}
-        \textrm{Falls $m = 1$ sieht man leicht, dass höchstens $r_1 + 1$ viele Lösungen möglich sind und die Ungleichung
-        sogar unlösbar ist, falls $\lambda > 1$.\ Für $\sqrt{2m} > \lambda$ ist das Lemma ebenfalls trivial.}
+        \textrm{Falls $m = 1$, sieht man leicht, dass höchstens $r_1 + 1$ viele Lösungen möglich sind und die Ungleichung
+        sogar unlösbar ist, falls $\lambda > 1$.
+        \newline
+        Für $\sqrt{2m} > \lambda$ ist das Lemma ebenfalls trivial.}
         \newline
         \textrm{Angenommen, die Aussage gelte für $m-1$ und seien nun}
         \begin{equation}
             m > 1 \sptext{und} \lambda > \sqrt{2m} > 1. \label{eq:sqrt-2m-ass}
         \end{equation}
         \textrm{Seien $r = r_m$ und $i = i_m$ beliebig, aber fest.\ Dann beschränkt sich die Anzahl der ganzen Zahlen
-        $\enum{i_1}{i_{m-1}}$ auf}
+        $\enum{i_1}{i_{m-1}}$ auf höchstens}
         \begin{equation}
-            \sqrt{2m - 2} (\lambda - 1 + 2 \frac{i}{r})^{-1}\enum{(r_1+1)}{(r_{m-1}+1)}. \label{eq:fix-lim}
+            \sqrt{2m - 2} \left( \lambda - 1 + 2 \frac{i}{r} \right)^{-1}\enum{(r_1+1)}{(r_{m-1}+1)}. \label{eq:fix-lim}
         \end{equation}
         Man sieht schnell:
         \begin{align*}

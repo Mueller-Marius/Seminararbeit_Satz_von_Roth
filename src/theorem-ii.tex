@@ -35,6 +35,7 @@
         \textrm{Wie in der \hyperref[sec:th2]{Einleitung des Kapitels} erwähnt, läuft der Beweis darauf hinaus, das
         \hyperref[subsec:lemma3]{Lemma~3} anzuwenden.\ Die nötige Vorarbeit wird in erster Linie mit den Lemmata
         \hyperref[subsec:lemma4]{4} und \hyperref[subsec:lemma5]{5} geleistet.}
+        \newline
         \begin{namedproof}{\emph{\hyperref[subsec:th2]{Theorem II}}}
             Sei $R$ ein Polynom nach Definition in~\ref{subsubsec:def-poly} und seien $\varepsilon,\ \xi,\ n,\ m \sptext
             {und} \enum{r_1}{r_m}$ wie in~\ref{subsec:th2} beschrieben.
@@ -45,7 +46,7 @@
             \begin{equation}
                 R_{\enum{i_1}{i_m}}(\enum{\xi}{\xi}) = 0 \label{eq:rem-poly-condition}
             \end{equation}
-            sodass ebenfalls gilt:
+            sodass (wegen~\ref{st:ind-st}) ebenfalls gilt:
             \begin{equation}
                 \sum_{1 \leq \mu \leq m} \frac{i_\mu}{r_\mu} \leq \den{2} m(1 - \varepsilon) \label{eq:ind-condition}
             \end{equation}
